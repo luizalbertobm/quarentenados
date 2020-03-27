@@ -146,6 +146,9 @@
                             <iframe class="embed-responsive-item" style="border-radius: 15px; " src="https://www.youtube.com/embed/4yIR2rxwV-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
+                    <p class="description size24">
+                        Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
+                    </p>
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="neumorphism">
@@ -153,6 +156,9 @@
                             <iframe class="embed-responsive-item" style="border-radius: 15px; " src="https://www.youtube.com/embed/4yIR2rxwV-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
+                    <p class="description size24">
+                        Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
+                    </p>
                 </div>
             </div>
         </div>
