@@ -14,7 +14,7 @@
 <body>
     <div class="container" id="app">
         <div class="top">
-            <h1>Quarentenados</h1>
+        <img class="main-logo" src="imgs/quarentenados-logo.png"/>
             <ul class="menu">
                 <li><a href="http://">Supermercados</a></li>
                 <li><a href="http://">Farmácias</a></li>
