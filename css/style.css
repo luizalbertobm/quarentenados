@@ -1,92 +1,118 @@
-body{
+body {
     background-color: #ECF0F3;
     color: #6D7278;
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 'regular';
     font-size: 14px;
     padding-bottom: 50px;
 }
 
-h1{
-    color: #6D7278;
+h1 {
+    color: #C0BDE8;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-h2{
+
+h2 {
     color: #6D7278;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-bottom: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: #6D7278;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     color: rgb(166, 169, 173)
 }
-.top{
-    padding: 40px 0;
+
+.main-logo {
+    width: 300px;
+}
+
+.top {
+    padding-bottom: 30px;
+    padding-top: 120px;
 }
 
 .menu {
-    padding: 0;
+    padding-top: 20px;
+    margin-left: -40px;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
     margin-right: 20px;
 }
 
-.menu li a{
+.menu li a {
     font-size: 18px;
+    padding-bottom: 10px;
     color: #6D7278;
     text-decoration: none;
-}
-.menu li a:hover{
-    font-size: 18px;
-    color: #6D7278;
-    text-decoration: none;
-    border-bottom: 3px solid  #868E96;
 }
 
-.neumorphism{
+.menu li a:hover {
+    font-size: 18px;
+    color: #6D7278;
+    text-decoration: none;
+    border-bottom: 3px solid #C0BDE8;
+}
+
+.main logo .highlight {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.section {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.neumorphism {
     border-radius: 22px;
     background: #ECF0F3;
-    box-shadow:  10px 10px 20px #c9cccf, 
-                -10px -10px 20px #ffffff;
+    box-shadow: 10px 10px 20px #c9cccf, -10px -10px 20px #ffffff;
 }
 
-.box{
+.box {
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.clock{
+.clock {
     font-size: 95px;
     margin-top: -30px;
+    margin-bottom: -20px;
 }
 
-.size24{
+.size24 {
     font-size: 24px;
 }
-.size14{
+
+.size14 {
     font-size: 14px;
 }
 
-.description{
+.description {
     margin-top: 20px;
 }
 
-.news{
+.news {
     padding: 10px;
     height: 100px;
     overflow: hidden;
 }
-.news img{
+
+.news img {
     float: left;
     margin-right: 15px;
     width: 80px;
