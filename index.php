@@ -65,13 +65,14 @@
 
         <div class="highlight">
             <h2>Destaques</h2>
+
             <div class="row">
                 <div class="col-md-4">
-                    <div class="neumorphism box" style="background-image: url(imgs/image-placeholder.png)">
+                    <div class="neumorphism box mb-3" style="background-image: url(https://abrilexame.files.wordpress.com/2016/09/size_960_16_9_cerveja-corona4.jpg?quality=70&strip=info&w=960)">
                     </div>
-                    <p class="description size24">
+                    <a href="#" class="description size24">
                         Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
-                    </p>
+                    </a>
                 </div>
                 <div class="col-md-4">
                     <div class="neumorphism box" style="background-image: url(imgs/image-placeholder.png)">

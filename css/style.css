@@ -83,6 +83,8 @@ a:hover{
 
 .news{
     padding: 10px;
+    height: 100px;
+    overflow: hidden;
 }
 .news img{
     float: left;
