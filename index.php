@@ -184,7 +184,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <iframe style="border:none; width:100%; height:300px" :src="news.externalLink"></iframe>
+                        <iframe style="border:none; width:100%; height:400px" :src="news.externalLink"></iframe>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
