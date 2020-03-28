@@ -8,6 +8,18 @@ var app = new Vue({
             externalLink:''
         }
     },
+    methods: {
+        loadModal(event){
+            event.preventDefault()
+            let target = event.target
+            console.log(target.parentNode.href)
+            //return
+            this.news.title = target.textContent
+            this.news.externalLink = target.parentNode.href
+            console.log(this.news)
+            $('#myModal').modal('show')
+        }
+    },
 })
 
 var week = ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB'];
