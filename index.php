@@ -8,11 +8,11 @@
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
-
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="app">
         <div class="top">
         <img class="main-logo" src="imgs/quarentenados-logo.png"/>
             <ul class="menu">
@@ -46,10 +46,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="clock">8:22</div>
-                <p>Caldas da Rainha - Portugal</p>
-                <small>Atualizado em 09/08/2020 às 07:22</small>
+            <div class="col-md-3 text-right">
+                <div class="clock">{{time}}</div>                
+                <span>{{date}}</span>
             </div>
             <div class="col-md-3">
                 <div class="neumorphism news">
@@ -176,6 +175,8 @@
 
     <script src="vendor/components/jquery/jquery.min.js"></script>
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    
 </body>
 
 </html>
