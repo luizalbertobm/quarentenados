@@ -46,10 +46,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="clock">8:22</div>
-                <p>Caldas da Rainha - Portugal</p>
-                <small>Atualizado em 09/08/2020 às 07:22</small>
+            <div class="col-md-3 text-right">
+                <div class="clock">{{time}}</div>                
+                <span>{{date}}</span>
             </div>
             <div class="col-md-3">
                 <div class="neumorphism news">
@@ -176,7 +175,8 @@
 
     <script src="vendor/components/jquery/jquery.min.js"></script>
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="js/app.js"></script>
+    
 </body>
 
 </html>
