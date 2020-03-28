@@ -8,13 +8,13 @@
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 </head>
 
 <body>
-    <div class="container" id="app">
+    <div class="container">
         <div class="top">
-        <img class="main-logo" src="imgs/quarentenados-logo.png"/>
+        <img class="main-logo" src="imgs/logo-qmdpi.png"/>
             <ul class="menu">
                 <li><a href="http://">Supermercados</a></li>
                 <li><a href="http://">Farmácias</a></li>
@@ -28,27 +28,28 @@
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">7654</div>
+                            <div class="size24">25.431</div>
                             Casos suspeitos
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">654</div>
+                            <div class="size24">4.268</div>
                             Casos Confimados
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">54</div>
+                            <div class="size24">76</div>
                             Vítimas
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 text-right">
-                <div class="clock">{{time}}</div>                
-                <span>{{date}}</span>
+            <div class="col-md-3">
+                <div class="clock">8:22</div>
+                <p>Caldas da Rainha - Portugal</p>
+                <small>Atualizado em 09/08/2020 às 07:22</small>
             </div>
             <div class="col-md-3">
                 <div class="neumorphism news">
@@ -97,8 +98,18 @@
                     <div class="neumorphism news">
                         <img src="imgs/remote-job.png" alt="img">
                         <div>
-                            <a href="hhttps://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
+                            <a target="_blank href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
                             <br><strong>Negócios</strong> <br>Covid-19, o que podem fazer as empresas diante deste desafio?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="neumorphism news">
+                    <img src="imgs/aviao-com-mundo-com-coronavirus-23032020074938528.png" alt="aviao-coronavirus.png">
+                        <div>
+                            <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/coronavirus-aviao-chegou-china-ventiladores-luvas-mascaras-1909907">
+                            <br><strong>Internacional</strong> <br>Avião chegou da China com luvas e máscaras.
                             </a>
                         </div>
                     </div>
@@ -107,21 +118,46 @@
                     <div class="neumorphism news">
                     <img src="imgs/remote-job.png" alt="img">
                         <div>
-                            <a href="hhttps://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
+                            <a target="_blank href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
                             <br><strong>Negócios</strong> <br>Covid-19, o que podem fazer as empresas diante deste desafio?
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="neumorphism news">
-                    <img src="imgs/remote-job.png" alt="img">
-                        <div>
-                            <a href="hhttps://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
-                            <br><strong>Negócios</strong> <br>Covid-19, o que podem fazer as empresas diante deste desafio?
-                            </a>
-                        </div>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h2>Onde comprar online</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/continente-logo.png)">
                     </div>
+                    <a target="_blank" href="https://www.continente.pt/pt-pt/public/Pages/homepage.aspx" class="description size24">
+                    Continente
+                    <br> 
+                    <small>Hipermercado</small> 
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/mercachefe.jpg)">
+                    </div>
+                    <a target="_blank" href="https://mercachefe.pt/pt/" class="description size24">
+                    MercaChefe
+                    <br> 
+                    <small>Hipermercado</small> 
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/auchan.png)">
+                    </div>
+                    <a target="_blank" href="https://auchan.queue-it.net/?c=auchan&e=auchan01&t=https%3A%2F%2Fwww.auchan.pt%2FFrontoffice&cid=pt-PT" class="description size24">
+                    Auchan
+                    <br> 
+                    <small>Hipermercado</small> <<br>
+                    <small>Entregas previstas para 31 de abril</small> 
+                    </a>
                 </div>
             </div>
         </div>
@@ -175,8 +211,6 @@
 
     <script src="vendor/components/jquery/jquery.min.js"></script>
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
-    
 </body>
 
 </html>
