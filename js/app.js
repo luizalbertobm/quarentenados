@@ -2,7 +2,11 @@ var app = new Vue({
     el: '#app',
     data: {
         time: '',
-        date: ''
+        date: '',
+        news:{
+            title:'',
+            externalLink:''
+        }
     },
 })
 

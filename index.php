@@ -8,13 +8,14 @@
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
     <div class="container" id="app">
         <div class="top">
-        <img class="main-logo" src="imgs/quarentenados-logo.png"/>
+            <img class="main-logo" src="imgs/quarentenados-logo.png" />
             <ul class="menu">
                 <li><a href="http://">Supermercados</a></li>
                 <li><a href="http://">Farmácias</a></li>
@@ -46,13 +47,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 text-right">
-                <div class="clock">{{time}}</div>                
+            <div class="col-md-3 text-rightÍ">
+                <div class="clock">{{time}}</div>
                 <span>{{date}}</span>
             </div>
             <div class="col-md-3">
                 <div class="neumorphism news">
-                    <img src="imgs/image-placeholder.png" alt="img">
+                    <img src="https://abrilexame.files.wordpress.com/2016/09/size_960_16_9_cerveja-corona4.jpg?quality=70&strip=info&w=960" alt="img">
                     <div>
                         <a href="http://">
                             Lorem ipsum dolor siamet consectuor silament calastide soter lamadil.
@@ -74,14 +75,14 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="neumorphism box" style="background-image: url(imgs/image-placeholder.png)">
+                    <div class="neumorphism box" style="background-image: url(https://abrilexame.files.wordpress.com/2016/09/size_960_16_9_cerveja-corona4.jpg?quality=70&strip=info&w=960)">
                     </div>
                     <p class="description size24">
                         Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <div class="neumorphism box" style="background-image: url(imgs/image-placeholder.png)">
+                    <div class="neumorphism box" style="background-image: url(https://abrilexame.files.wordpress.com/2016/09/size_960_16_9_cerveja-corona4.jpg?quality=70&strip=info&w=960)">
                     </div>
                     <p class="description size24">
                         Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
@@ -95,7 +96,17 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="neumorphism news">
-                        <img src="imgs/image-placeholder.png" alt="img">
+                        <img src="https://abrilexame.files.wordpress.com/2016/09/size_960_16_9_cerveja-corona4.jpg?quality=70&strip=info&w=960" alt="img">
+                        <div>
+                            <a href="http://" data-target="#exampleModal">
+                                Lorem ipsum dolor siamet consectuor silament calastide soter lamadil.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="neumorphism news">
+                        <img src="https://abrilexame.files.wordpress.com/2016/09/size_960_16_9_cerveja-corona4.jpg?quality=70&strip=info&w=960" alt="img">
                         <div>
                             <a href="http://">
                                 Lorem ipsum dolor siamet consectuor silament calastide soter lamadil.
@@ -105,17 +116,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="neumorphism news">
-                        <img src="imgs/image-placeholder.png" alt="img">
-                        <div>
-                            <a href="http://">
-                                Lorem ipsum dolor siamet consectuor silament calastide soter lamadil.
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="neumorphism news">
-                        <img src="imgs/image-placeholder.png" alt="img">
+                        <img src="https://abrilexame.files.wordpress.com/2016/09/size_960_16_9_cerveja-corona4.jpg?quality=70&strip=info&w=960" alt="img">
                         <div>
                             <a href="http://">
                                 Lorem ipsum dolor siamet consectuor silament calastide soter lamadil.
@@ -173,10 +174,30 @@
 
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">{{news.title}}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe :src="news."></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="vendor/components/jquery/jquery.min.js"></script>
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
-    
+
 </body>
 
 </html>
