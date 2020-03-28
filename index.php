@@ -53,10 +53,10 @@
             </div>
             <div class="col-md-3">
                 <div class="neumorphism news">
-                    <img src="imgs/image-placeholder.png" alt="img">
+                    <img src="imgs/24-h.png" alt="img">
                     <div>
                         <a href="http://">
-                            Lorem ipsum dolor siamet consectuor silament calastide soter lamadil.
+                        <strong>Ajuda</strong> <br> Sente tosse, febre ou falta de ar? Ligue <strong>SNS24 808 24 24 24</strong>
                         </a>
                     </div>
                 </div>
@@ -68,25 +68,25 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <div class="neumorphism box mb-3" style="background-image: url(https://abrilexame.files.wordpress.com/2016/09/size_960_16_9_cerveja-corona4.jpg?quality=70&strip=info&w=960)">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
                     </div>
-                    <a href="#" class="description size24">
-                        Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
+                    <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
+                    A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="neumorphism box" style="background-image: url(imgs/image-placeholder.png)">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
                     </div>
-                    <p class="description size24">
-                        Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
-                    </p>
+                    <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
+                    O que você precisa de saber hoje sobre o coronavírus
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <div class="neumorphism box" style="background-image: url(imgs/image-placeholder.png)">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
                     </div>
-                    <p class="description size24">
-                        Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
-                    </p>
+                    <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
+                    Ponto de Situação Atual em Portugal
+                    </a>
                 </div>
             </div>
         </div>
@@ -96,30 +96,30 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="neumorphism news">
-                        <img src="imgs/image-placeholder.png" alt="img">
+                        <img src="imgs/remote-job.png" alt="img">
                         <div>
-                            <a href="http://">
-                                Lorem ipsum dolor siamet consectuor silament calastide soter lamadil.
+                            <a href="hhttps://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
+                            <br><strong>Negócios</strong> <br>Covid-19, o que podem fazer as empresas diante deste desafio?
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="neumorphism news">
-                        <img src="imgs/image-placeholder.png" alt="img">
+                    <img src="imgs/remote-job.png" alt="img">
                         <div>
-                            <a href="http://">
-                                Lorem ipsum dolor siamet consectuor silament calastide soter lamadil.
+                            <a href="hhttps://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
+                            <br><strong>Negócios</strong> <br>Covid-19, o que podem fazer as empresas diante deste desafio?
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="neumorphism news">
-                        <img src="imgs/image-placeholder.png" alt="img">
+                    <img src="imgs/remote-job.png" alt="img">
                         <div>
-                            <a href="http://">
-                                Lorem ipsum dolor siamet consectuor silament calastide soter lamadil.
+                            <a href="hhttps://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
+                            <br><strong>Negócios</strong> <br>Covid-19, o que podem fazer as empresas diante deste desafio?
                             </a>
                         </div>
                     </div>
