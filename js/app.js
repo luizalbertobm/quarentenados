@@ -2,7 +2,23 @@ var app = new Vue({
     el: '#app',
     data: {
         time: '',
-        date: ''
+        date: '',
+        news: {
+            title: '',
+            externalLink: ''
+        }
+    },
+    methods: {
+        loadModal(event) {
+            event.preventDefault()
+            let target = event.target
+            console.log(target.parentNode.href)
+                //return
+            this.news.title = target.textContent
+            this.news.externalLink = target.parentNode.href
+            console.log(this.news)
+            $('#myModal').modal('show')
+        }
     },
 })
 
@@ -20,7 +36,7 @@ function updateTime() {
 
 function zeroPadding(num, digit) {
     var zero = '';
-    for(var i = 0; i < digit; i++) {
+    for (var i = 0; i < digit; i++) {
         zero += '0';
     }
     return (zero + num).slice(-digit);
