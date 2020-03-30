@@ -164,6 +164,36 @@
             </div>
         </div>
 
+
+        <div class="highlight">
+            <h2>Tecnologia</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/covidografia.png)">
+                    </div>
+                    <a target="_blank" href="https://covidografia.pt/" class="description size24"> 
+                        Um app para verificar os  sintomas dos Portugueses ( Cadastro apenas pela conta do Facebook)
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.jpg)">
+                    </div>
+                    <a target="_blank" href="https://covidapp.pt/about/home" class="description size24">
+                    Monitorize os seus sintomas do COVID-19 de forma segura e gratuita!
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/covideapp.png)">
+                    </div>
+                    <a target="_blank" href="http://covidapp.ufsc.br/" class="description size24">
+                        CovidApp - Como ajudar no controle da Pandemia do Corona Vírus?
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
         <div class="business">
             <h2 class="mt-5">Mapa da disseminação</h2>
             <div class="row">
