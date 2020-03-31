@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quarentenados</title>
+    <link href="imgs/fav-icon2.png" rel="icon" type="image/x-icon" />
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
@@ -29,19 +30,19 @@
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">25.431</div>
+                            <div class="size24">52.086</div>
                             Casos suspeitos
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">4.268</div>
+                            <div class="size24">7.443</div>
                             Casos Confimados
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">76</div>
+                            <div class="size24">160</div>
                             Vítimas
                         </div>
                     </div>
@@ -100,7 +101,7 @@
                         <img src="imgs/remote-job.png" alt="img">
                         <div>
                             <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
-                                <strong>Negócios</strong>
+                            <br><strong>Negócios</strong>
                                 <div class="text">Covid-19, o que podem fazer as empresas diante deste desafio?</div>
                             </a>
                         </div>
@@ -108,10 +109,10 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="neumorphism news">
-                        <img src="imgs/remote-job.png" alt="img">
+                        <img src="imgs/picodovirus.png" alt="img">
                         <div>
-                            <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
-                                <br><strong>Negócios</strong> <br>Covid-19, o que podem fazer as empresas diante deste desafio?
+                            <a @click="loadModal($event)" href="https://www.publico.pt/2020/03/28/sociedade/noticia/especialista-mudanca-hora-aumenta-risco-infeccao-1909927">
+                                <br><strong>Rotina</strong> <br>Mudança da hora aumenta risco de infecção
                             </a>
                         </div>
                     </div>
@@ -120,8 +121,8 @@
                     <div class="neumorphism news">
                         <img src="imgs/remote-job.png" alt="img">
                         <div>
-                            <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
-                                <br><strong>Negócios</strong> <br>Covid-19, o que podem fazer as empresas diante deste desafio?
+                            <a @click="loadModal($event)" href="https://www.publico.pt/2020/03/27/sociedade/noticia/coronavirus-pico-surto-portugal-sera-mes-maio-1909818">
+                                <br><strong>Corona</strong> <br>Pico do surto em Portugal nunca será antes de maio
                             </a>
                         </div>
                     </div>
@@ -134,12 +135,42 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <div class="neumorphism box mb-3" style="background-image: url(imgs/continente-logo.png)">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/casaantero.png)">
                     </div>
-                    <a target="_blank" href="https://www.continente.pt/pt-pt/public/Pages/homepage.aspx" class="description size24">
-                    Continente
+                    <a target="_blank" href="https://www.instagram.com/casaantero/" class="description size24">
+                    Casa Antero
                     <br> 
-                    <small>Hipermercado</small> 
+                    <small>Encomendas até às 10h.</small> 
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/saudaveissemculpa.png)">
+                    </div>
+                    <a target="_blank" href="https://www.instagram.com/saudaveissemculpa/" class="description size24">
+                    Sem Culpa
+                    <br> 
+                    <small>Bolos Saudáveis, muffins, muffins xl e fatia.</small> 
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/leef.jpg)">
+                    </div>
+                    <a target="_blank" href="https://www.instagram.com/leefyourlife/" class="description size24">
+                    Leef
+                    <br> 
+                    <small>Entregas Terça e sextas</small> 
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/eusebio.png)">
+                    </div>
+                    <a target="_blank" href="https://www.instagram.com/eusebioshamburgueria/" class="description size24">
+                    Eusebio Hamburgueria
+                    <br> 
+                    <small>Pedidos de 16 as 24h</small> 
                     </a>
                 </div>
                 <div class="col-md-4">
@@ -157,7 +188,7 @@
                     <a target="_blank" href="https://auchan.queue-it.net/?c=auchan&e=auchan01&t=https%3A%2F%2Fwww.auchan.pt%2FFrontoffice&cid=pt-PT" class="description size24">
                     Auchan
                     <br> 
-                    <small>Hipermercado</small> <<br>
+                    <small>Hipermercado</small> <br>
                     <small>Entregas previstas para 31 de abril</small> 
                     </a>
                 </div>
@@ -165,7 +196,7 @@
         </div>
 
 
-        <div class="highlight">
+        <div class="section">
             <h2>Tecnologia</h2>
 
             <div class="row">
