@@ -108,7 +108,7 @@
             </div>
         </div>
 
-        <div class="highlight">
+        <div class="section">
             <h2>Destaques</h2>
 
             <div class="row">
@@ -136,7 +136,7 @@
             </div>
         </div>
 
-        <div class="highlight">
+        <div class="section">
             <h2>Onde comprar online</h2>
 
             <div class="row">
