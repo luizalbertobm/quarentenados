@@ -99,6 +99,14 @@ a:hover {
     background-position: center center;
 }
 
+.col-md-4 {
+    margin-bottom: 20px;
+}
+
+.col-md-3 {
+    margin-bottom: 5px;
+}
+
 .clock {
     font-size: 95px;
     margin-top: -30px;
@@ -106,7 +114,7 @@ a:hover {
 }
 
 .size24 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .size14 {
