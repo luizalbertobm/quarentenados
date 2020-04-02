@@ -100,6 +100,7 @@
                         <div>
                             <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
                                 <br><strong>Negócios</strong>
+>>>>>>> 3e10628be005dcb0e7e1f5b043a0b51c9d583757
                                 <div class="text">Covid-19, o que podem fazer as empresas diante deste desafio?</div>
                             </a>
                         </div>

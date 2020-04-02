@@ -16,7 +16,7 @@ h1 {
 
 h2 {
     color: #6D7278;
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-bottom: 20px;
@@ -72,7 +72,12 @@ a:hover {
 
 .section {
     padding-bottom: 20px;
-    padding-top: 40px;
+    padding-top: 10px;
+}
+
+.row {
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .neumorphism {

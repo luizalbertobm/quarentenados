@@ -3,17 +3,17 @@ var app = new Vue({
     data: {
         time: '',
         date: '',
-        news:{
-            title:'',
-            externalLink:''
+        news: {
+            title: '',
+            externalLink: ''
         }
     },
     methods: {
-        loadModal(event){
+        loadModal(event) {
             event.preventDefault()
             let target = event.target
             console.log(target.parentNode.href)
-            //return
+                //return
             this.news.title = target.textContent
             this.news.externalLink = target.parentNode.href
             document.getElementById('iframe').contentWindow.location.reload();
@@ -37,7 +37,7 @@ function updateTime() {
 
 function zeroPadding(num, digit) {
     var zero = '';
-    for(var i = 0; i < digit; i++) {
+    for (var i = 0; i < digit; i++) {
         zero += '0';
     }
     return (zero + num).slice(-digit);
