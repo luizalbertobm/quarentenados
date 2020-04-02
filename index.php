@@ -49,9 +49,9 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="clock">8:22</div>
+                <div class="clock">11:34</div>
                 <p>Caldas da Rainha - Portugal</p>
-                <small>Atualizado em 09/08/2020 às 07:22</small>
+                <small>Atualizado em 02/04/2020 às 07:22</small>
             </div>
             <div class="col-md-3">
                 <div class="neumorphism news">
@@ -80,7 +80,7 @@
                     <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
                     </div>
                     <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
-                        O que você precisa de saber hoje sobre o coronavírus
+                        O que você precisa saber hoje sobre o coronavírus
                     </a>
                 </div>
                 <div class="col-md-4">
