@@ -13,8 +13,8 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 </head>
 
-<body>
-    <div class="container">
+<body id="">
+    <div class="container" id="app">
         <div class="top">
             <img class="main-logo" src="imgs/logo-qmdpi.png" />
             <ul class="menu">
@@ -49,9 +49,8 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="clock">11:34</div>
-                <p>Caldas da Rainha - Portugal</p>
-                <small>Atualizado em 02/04/2020 às 07:22</small>
+                <div class="clock">{{time}}</div>
+                <span>{{date}}</span>
             </div>
             <div class="col-md-3">
                 <div class="neumorphism news">
@@ -101,8 +100,8 @@
                         <img src="imgs/remote-job.png" alt="img">
                         <div>
                             <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
-                            <br><strong>Negócios</strong>
-                                <div class="text">Covid-19, o que podem fazer as empresas diante deste desafio?</div>
+                                <br><strong>Negócios</strong>
+                                <br>Covid-19, o que podem fazer as empresas diante deste desafio?
                             </a>
                         </div>
                     </div>
@@ -112,7 +111,8 @@
                         <img src="imgs/picodovirus.png" alt="img">
                         <div>
                             <a @click="loadModal($event)" href="https://www.publico.pt/2020/03/28/sociedade/noticia/especialista-mudanca-hora-aumenta-risco-infeccao-1909927">
-                                <br><strong>Rotina</strong> <br>Mudança da hora aumenta risco de infecção
+                                <br><strong>Rotina</strong>
+                                <br>Mudança da hora aumenta risco de infecção
                             </a>
                         </div>
                     </div>
@@ -122,7 +122,8 @@
                         <img src="imgs/remote-job.png" alt="img">
                         <div>
                             <a @click="loadModal($event)" href="https://www.publico.pt/2020/03/27/sociedade/noticia/coronavirus-pico-surto-portugal-sera-mes-maio-1909818">
-                                <br><strong>Corona</strong> <br>Pico do surto em Portugal nunca será antes de maio
+                                <br><strong>Corona</strong>
+                                <br>Pico do surto em Portugal nunca será antes de maio
                             </a>
                         </div>
                     </div>
@@ -138,27 +139,27 @@
                     <div class="neumorphism box mb-3" style="background-image: url(imgs/casaantero.png)">
                     </div>
                     <a target="_blank" href="https://www.instagram.com/casaantero/" class="description size24">
-                    Casa Antero
-                    <br> 
-                    <small>Encomendas até às 10h.</small> 
+                        Casa Antero
+                        <br>
+                        <small>Encomendas até às 10h.</small>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <div class="neumorphism box mb-3" style="background-image: url(imgs/saudaveissemculpa.png)">
                     </div>
                     <a target="_blank" href="https://www.instagram.com/saudaveissemculpa/" class="description size24">
-                    Sem Culpa
-                    <br> 
-                    <small>Bolos Saudáveis, muffins, muffins xl e fatia.</small> 
+                        Sem Culpa
+                        <br>
+                        <small>Bolos Saudáveis, muffins, muffins xl e fatia.</small>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <div class="neumorphism box mb-3" style="background-image: url(imgs/leef.jpg)">
                     </div>
                     <a target="_blank" href="https://www.instagram.com/leefyourlife/" class="description size24">
-                    Leef
-                    <br> 
-                    <small>Entregas Terça e sextas</small> 
+                        Leef
+                        <br>
+                        <small>Entregas Terça e sextas</small>
                     </a>
                 </div>
             </div>
@@ -168,28 +169,28 @@
                     <div class="neumorphism box mb-3" style="background-image: url(imgs/eusebio.png)">
                     </div>
                     <a target="_blank" href="https://www.instagram.com/eusebioshamburgueria/" class="description size24">
-                    Eusebio Hamburgueria
-                    <br> 
-                    <small>Pedidos de 16 as 24h</small> 
+                        Eusebio Hamburgueria
+                        <br>
+                        <small>Pedidos de 16 as 24h</small>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <div class="neumorphism box mb-3" style="background-image: url(imgs/mercachefe.jpg)">
                     </div>
                     <a target="_blank" href="https://mercachefe.pt/pt/" class="description size24">
-                    MercaChefe
-                    <br> 
-                    <small>Hipermercado</small> 
+                        MercaChefe
+                        <br>
+                        <small>Hipermercado</small>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <div class="neumorphism box mb-3" style="background-image: url(imgs/auchan.png)">
                     </div>
                     <a target="_blank" href="https://auchan.queue-it.net/?c=auchan&e=auchan01&t=https%3A%2F%2Fwww.auchan.pt%2FFrontoffice&cid=pt-PT" class="description size24">
-                    Auchan
-                    <br> 
-                    <small>Hipermercado</small> <br>
-                    <small>Entregas previstas para 31 de abril</small> 
+                        Auchan
+                        <br>
+                        <small>Hipermercado</small> <br>
+                        <small>Entregas previstas para 31 de abril</small>
                     </a>
                 </div>
             </div>
@@ -203,15 +204,15 @@
                 <div class="col-md-4">
                     <div class="neumorphism box mb-3" style="background-image: url(imgs/covidografia.png)">
                     </div>
-                    <a target="_blank" href="https://covidografia.pt/" class="description size24"> 
-                        Um app para verificar os  sintomas dos Portugueses ( Cadastro apenas pela conta do Facebook)
+                    <a target="_blank" href="https://covidografia.pt/" class="description size24">
+                        Um app para verificar os sintomas dos Portugueses ( Cadastro apenas pela conta do Facebook)
                     </a>
                 </div>
                 <div class="col-md-4">
                     <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.jpg)">
                     </div>
                     <a target="_blank" href="https://covidapp.pt/about/home" class="description size24">
-                    Monitorize os seus sintomas do COVID-19 de forma segura e gratuita!
+                        Monitorize os seus sintomas do COVID-19 de forma segura e gratuita!
                     </a>
                 </div>
                 <div class="col-md-4">
@@ -252,10 +253,10 @@
                 <div class="col-md-6 mb-4">
                     <div class="neumorphism">
                         <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ra7i39lotk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ra7i39lotk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
                     </div>
                     <p class="description size24">
-                    Atila Iamarino comenta teorias relacionadas à origem do novo coronavírus
+                        Atila Iamarino comenta teorias relacionadas à origem do novo coronavírus
                     </p>
                 </div>
             </div>

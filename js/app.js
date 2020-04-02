@@ -12,11 +12,12 @@ var app = new Vue({
         loadModal(event) {
             event.preventDefault()
             let target = event.target
-            console.log(target.parentNode.href)
+            console.log('href:')
+            console.log(target.href)
                 //return
             this.news.title = target.textContent
-            this.news.externalLink = target.parentNode.href
-            document.getElementById('iframe').contentWindow.location.reload();
+            this.news.externalLink = target.href
+            //document.getElementById('iframe').contentWindow.location.reload();
 
             $('#myModal').modal('show')
         }
