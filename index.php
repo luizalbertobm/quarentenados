@@ -99,7 +99,7 @@
                         <img src="imgs/remote-job.png" alt="img">
                         <div>
                             <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
-                                <strong>Negócios</strong>
+                                <br><strong>Negócios</strong>
                                 <div class="text">Covid-19, o que podem fazer as empresas diante deste desafio?</div>
                             </a>
                         </div>
@@ -110,7 +110,8 @@
                         <img src="imgs/remote-job.png" alt="img">
                         <div>
                             <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
-                                <br><strong>Negócios</strong> <br>Covid-19, o que podem fazer as empresas diante deste desafio?
+                                <br><strong>Negócios</strong> 
+                                <div class="text">Covid-19, o que podem fazer as empresas diante deste desafio?</div>
                             </a>
                         </div>
                     </div>
@@ -120,7 +121,8 @@
                         <img src="imgs/remote-job.png" alt="img">
                         <div>
                             <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
-                                <br><strong>Negócios</strong> <br>Covid-19, o que podem fazer as empresas diante deste desafio?
+                                <br><strong>Negócios</strong> 
+                                <div class="text">Covid-19, o que podem fazer as empresas diante deste desafio?</div>
                             </a>
                         </div>
                     </div>
@@ -184,7 +186,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <iframe style="border:none; width:100%; height:400px" :src="news.externalLink"></iframe>
+                        <iframe id="iframe" style="border:none; width:100%; height:350px" :src="news.externalLink"></iframe>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>

@@ -16,7 +16,8 @@ var app = new Vue({
             //return
             this.news.title = target.textContent
             this.news.externalLink = target.parentNode.href
-            console.log(this.news)
+            document.getElementById('iframe').contentWindow.location.reload();
+
             $('#myModal').modal('show')
         }
     },
