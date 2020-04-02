@@ -69,34 +69,6 @@
             
         </div>
 
-        <div class="highlight">
-            <h2>Destaques</h2>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
-                    </div>
-                    <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
-                        A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
-                    </div>
-                    <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
-                        O que você precisa saber hoje sobre o coronavírus
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
-                    </div>
-                    <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
-                        Ponto de Situação Atual em Portugal
-                    </a>
-                </div>
-            </div>
-        </div>
-
         <div class="section">
             <h2>Notícias</h2>
             <div class="row">
@@ -132,6 +104,34 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h2>Destaques</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
+                    </div>
+                    <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
+                        A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
+                    </div>
+                    <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
+                        O que você precisa saber hoje sobre o coronavírus
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
+                    </div>
+                    <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
+                        Ponto de Situação Atual em Portugal
+                    </a>
                 </div>
             </div>
         </div>
