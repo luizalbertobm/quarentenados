@@ -252,8 +252,7 @@
                 <div class="col-md-6 mb-4">
                     <div class="neumorphism">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" style="border-radius: 15px; " src="https://www.youtube.com/watch?v=ra7i39lotk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ra7i39lotk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
                     </div>
                     <p class="description size24">
                     Atila Iamarino comenta teorias relacionadas à origem do novo coronavírus
