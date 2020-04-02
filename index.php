@@ -30,20 +30,20 @@
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">52.086</div>
+                            <div class="size24">66.895</div>
                             Casos suspeitos
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">7.443</div>
+                            <div class="size24">9.034</div>
                             Casos Confimados
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">160</div>
-                            Vítimas
+                            <div class="size24">68</div>
+                            Curados
                         </div>
                     </div>
                 </div>
@@ -193,6 +193,22 @@
                     </a>
                 </div>
             </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="neumorphism box mb-3" style="background-image: url(imgs/art-bake.png)">
+                    </div>
+                    <a target="_blank" href="#" class="description size24">
+                    Art Bake - Bolos caseiros
+                    <br> 
+                    <small>Pegar no local</small> 
+                    <br><small>917 378 117</small> 
+                    </a>
+                </div>
+               
+
+            </div>
+
         </div>
 
 
