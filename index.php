@@ -45,19 +45,31 @@
 
             <div class="col-md-6">
                 <div class="row">
+<<<<<<< HEAD
                     <div class="col-md-3">
+=======
+                    <div class="col-4 mb-4">
+>>>>>>> 84454c26285152d1d732f51049fe24e769c31ce9
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
                             <div class="size24">66.895</div>
-                            Casos suspeitos
+                            suspeitos
                         </div>
                     </div>
+<<<<<<< HEAD
                     <div class="col-md-3">
+=======
+                    <div class="col-4 mb-4">
+>>>>>>> 84454c26285152d1d732f51049fe24e769c31ce9
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
                             <div class="size24">9.034</div>
-                            Casos Confimados
+                            Confimados
                         </div>
                     </div>
+<<<<<<< HEAD
                     <div class="col-md-3">
+=======
+                    <div class="col-4 mb-4">
+>>>>>>> 84454c26285152d1d732f51049fe24e769c31ce9
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
                             <div class="size24">68</div>
                             Curados
