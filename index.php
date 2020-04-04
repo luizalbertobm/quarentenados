@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    !-- social metas -->
+    <!-- social metas -->
     <meta property="og:site_name" content="Quarentenados">
     <meta property="og:title" content="Quarentenados">
     <meta property="og:description" content="Fique safe e informado nesta quarentena">
