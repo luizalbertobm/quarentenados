@@ -4,6 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    !-- social metas -->
+    <meta property="og:site_name" content="Quarentenados">
+    <meta property="og:title" content="Quarentenados">
+    <meta property="og:description" content="Fique safe e informado nesta quarentena">
+    <meta property="og:image" content="http://www.quarentenados.com/imgs/investment-company.png">
+    <meta property="og:url" content="http://www.quarentendados.com">
+    <meta name="theme-color" content="#C0BDE8" />
+
     <title>Quarentenados</title>
     <link href="imgs/fav-icon2.png" rel="icon" type="image/x-icon" />
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
