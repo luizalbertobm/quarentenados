@@ -63,19 +63,19 @@
 
             <div class="info">
                 <div class="row">
-                    <div class="col-4 col-sm-2 mb-2">
+                    <div class="col-4 col-sm-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
                             <div class="size24">66.895</div>
                             suspeitos
                         </div>
                     </div>
-                    <div class="col-4 col-sm-2 mb-2">
+                    <div class="col-4 col-sm-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
                             <div class="size24">9.034</div>
                             Confimados
                         </div>
                     </div>
-                    <div class="col-4 col-sm-2 mb-2">
+                    <div class="col-4 col-sm-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block text-success">
                             <div class="size24">68</div>
                             Curados
