@@ -15,13 +15,15 @@
 
 <body id="">
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
                     <li class="nav-item"><a class="nav-link" href="#compras">Compras</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnologia</a></li>
                     <li class="nav-item"><a class="nav-link" href="#map">Mapa de disseminação</a></li>
@@ -90,7 +92,7 @@
 
 
             <div class="highlight">
-                <h2>Destaques</h2>
+                <h2 id="destaques">Destaques</h2>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -118,7 +120,7 @@
             </div>
 
             <div class="section">
-                <h2>Notícias</h2>
+                <h2 id="noticias">Notícias</h2>
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism news">
