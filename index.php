@@ -14,8 +14,12 @@
 </head>
 
 <body id="">
+    
     <div id="app">
-    <nav class="navbar fixed-top navbar-light bg-light">
+       <nav class="navbar sticky-top navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/logo-qmdpi.png" height="30" alt="">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,10 +50,7 @@
                 </form> -->
             </div>
         </nav>
-        <div class="container">
-            <div class="top">
-                <img class="main-logo" src="imgs/logo-qmdpi.png" />
-            </div>
+        <div class="container mt-4">
 
             <div class="info">
                 <div class="row">
@@ -190,7 +191,7 @@
                             <small>Entregas Terça e sextas</small>
                         </a>
                     </div>
-               
+
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/eusebio.png)">
                         </div>
@@ -219,7 +220,7 @@
                             <small>Entregas previstas para 31 de abril</small>
                         </a>
                     </div>
-               
+
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/art-bake.png)">
                         </div>
