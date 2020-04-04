@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162791347-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162791347-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,9 +36,9 @@
 </head>
 
 <body id="">
-    
+
     <div id="app">
-       <nav class="navbar sticky-top navbar-light bg-light navbar-expand-lg">
+        <nav class="navbar sticky-top navbar-light bg-light navbar-expand-lg">
             <a class="navbar-brand" href="#">
                 <img src="imgs/logo-qmdpi.png" height="30" alt="">
             </a>
