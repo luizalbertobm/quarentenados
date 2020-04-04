@@ -22,10 +22,10 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Super mercados</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Farmácias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Alimentação</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Informações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#compras">Compras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnologia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#map">Mapa de disseminação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Outros
@@ -156,36 +156,9 @@
                 </div>
             </div>
 
-        <div class="section">
-            <h2>Destaques</h2>
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
-                    </div>
-                    <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
-                        A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
-                    </div>
-                    <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
-                        O que você precisa saber hoje sobre o coronavírus
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
-                    </div>
-                    <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
-                        Ponto de Situação Atual em Portugal
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Onde comprar online</h2>
+            <div class="section">
+                <h2 id="compras">Onde comprar online</h2>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -215,9 +188,7 @@
                             <small>Entregas Terça e sextas</small>
                         </a>
                     </div>
-                </div>
-
-                <div class="row">
+               
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/eusebio.png)">
                         </div>
@@ -246,9 +217,7 @@
                             <small>Entregas previstas para 31 de abril</small>
                         </a>
                     </div>
-                </div>
-
-                <div class="row">
+               
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/art-bake.png)">
                         </div>
@@ -259,15 +228,12 @@
                             <br><small>917 378 117</small>
                         </a>
                     </div>
-
-
                 </div>
-
             </div>
 
 
             <div class="section">
-                <h2>Tecnologia</h2>
+                <h2 id="tecnologia">Tecnologia</h2>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -295,7 +261,7 @@
             </div>
 
 
-            <div class="business">
+            <div class="business" id="map">
                 <h2 class="mt-5">Mapa da disseminação</h2>
                 <div class="row">
                     <div class="col-md-12 ">
@@ -306,7 +272,7 @@
                 </div>
             </div>
 
-            <div class="promotions">
+            <div class="promotions" id="videos">
                 <h2 class="mt-5">Videos</h2>
                 <div class="row">
                     <div class="col-md-6 mb-4">
