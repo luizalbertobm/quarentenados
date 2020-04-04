@@ -38,7 +38,7 @@ a:hover {
 
 .top {
     padding-bottom: 30px;
-    padding-top: 45px;
+    padding-top: 30px;
 }
 
 .menu {
@@ -51,7 +51,7 @@ a:hover {
     margin-right: 20px;
 }
 
-.menu li a {
+.nav-item a {
     font-size: 16px;
     padding-bottom: 10px;
     color: #6D7278;
@@ -83,13 +83,17 @@ a:hover {
 .neumorphism {
     border-radius: 20px;
     background: #ECF0F3;
-    box-shadow: 18px 18px 20px rgba(209, 217, 230, 0.22), -18px -18px 20px #ffffff60;
+    box-shadow: 10px 10px 10px rgba(195, 203, 216, 0.22), -18px -18px 20px #ffffff8e;
 }
 
 .neumorphism2 {
     border-radius: 20px;
     background: #FFFFFF;
     box-shadow: 3px 3px 3px #D1D9E6, -3px -3px 3px rgba(255, 255, 255, 0.603);
+}
+
+.fixed-height{
+    height: 200px;
 }
 
 .box {
@@ -108,8 +112,8 @@ a:hover {
 }
 
 .clock {
-    font-size: 95px;
-    margin-top: -30px;
+    font-size: 65px;
+    margin-top: -10px;
     margin-bottom: -20px;
 }
 
