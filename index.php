@@ -119,24 +119,28 @@
 
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/live-nossa-colab.jpg)">
                         </div>
-                        <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
-                            A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
+                        <a target="_blank" href="https://www.sympla.com.br/como-ser-camaleao-na-crise-do-coronavirus__830077" class="description size24">
+                            Papo colaborativo online. Clique aqui pra se inscrever.
+                        </a>
+                        <br>
+                        <a target="_blank" href="https://www.instagram.com/heleni.barreto/" class="description size24">
+                        <small>Recomendado por: Heleni Barreto</small> 
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/donation.jpg)">
+                        </div>
+                        <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size24">
+                        Doação de alimentos para famílias em necessidade. Falar com Anah Cremonese e Alexandra. 
+                        <br> <small>351 914 128 532</small>
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/jobs.png)">
                         </div>
-                        <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
-                            O que você precisa saber hoje sobre o coronavírus
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
-                        </div>
-                        <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
-                            Ponto de Situação Atual em Portugal
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdg8s0-15XCe7vCX7gBRRJZhb9F7YEfeMzcFmj0yeXk1-0Xlw/viewform?usp=sf_link/" class="description size24">
+                            Está sem emprego por causa da crise do Covid-19? Cadastre-se nesse formulário! Divulgaremos vagas em breve!
                         </a>
                     </div>
                 </div>
@@ -285,6 +289,33 @@
                 </div>
             </div>
 
+            <div class="section">
+                <h2 id="Para o seu negócio">Destaques</h2>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
+                        </div>
+                        <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
+                            A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
+                        </div>
+                        <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
+                            O que você precisa saber hoje sobre o coronavírus
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
+                        </div>
+                        <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
+                            Ponto de Situação Atual em Portugal
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <div class="business" id="map">
                 <h2 class="mt-5">Mapa da disseminação</h2>
