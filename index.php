@@ -111,12 +111,43 @@
                 </div>
             </div>
 
-
-
-
             <div class="highlight">
                 <h2 id="destaques">Destaques</h2>
-
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="neumorphism news">
+                            <img src="imgs/remote-job.png" alt="img">
+                            <div>
+                                <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
+                                    <br><strong>Negócios</strong>
+                                    <br>Covid-19, o que podem fazer as empresas diante deste desafio?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="neumorphism news">
+                            <img src="imgs/picodovirus.png" alt="img">
+                            <div>
+                                <a @click="loadModal($event)" href="https://www.publico.pt/2020/03/28/sociedade/noticia/especialista-mudanca-hora-aumenta-risco-infeccao-1909927">
+                                    <br><strong>Rotina</strong>
+                                    <br>Mudança da hora aumenta risco de infecção
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="neumorphism news">
+                            <img src="imgs/remote-job.png" alt="img">
+                            <div>
+                                <a @click="loadModal($event)" href="https://www.publico.pt/2020/03/27/sociedade/noticia/coronavirus-pico-surto-portugal-sera-mes-maio-1909818">
+                                    <br><strong>Corona</strong>
+                                    <br>Pico do surto em Portugal nunca será antes de maio
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/live-nossa-colab.jpg)">
