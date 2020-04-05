@@ -158,12 +158,13 @@
                         <br>
                         <a target="_blank" href="https://www.instagram.com/heleni.barreto/" class="description size24">
                         <small>Recomendado por: Heleni Barreto</small> 
+                        </a>
                     </div>
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/donation.jpg)">
                         </div>
                         <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size24">
-                        Doação de alimentos para famílias em necessidade. Falar com Anah Cremonese e Alexandra. 
+                        Coleta de alimentos para famílias em necessidade. Falar com Anah Cremonese e Alexandra. 
                         <br> <small>351 914 128 532</small>
                         </a>
                     </div>
