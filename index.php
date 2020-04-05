@@ -47,7 +47,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
                     <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
                     <li class="nav-item"><a class="nav-link" href="#compras">Compras</a></li>
@@ -75,22 +75,23 @@
         <div class="container mt-4">
 
             <div class="info">
+            <small>Situação atual de Portugal</small>
                 <div class="row">
-                    <div class="col-4 col-sm-2 mb-4">
+                    <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">66.895</div>
+                            <div class="size24">86,370</div>
                             suspeitos
                         </div>
                     </div>
-                    <div class="col-4 col-sm-2 mb-4">
+                    <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">9.034</div>
+                            <div class="size24">11,278</div>
                             Confimados
                         </div>
                     </div>
-                    <div class="col-4 col-sm-2 mb-4">
+                    <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block text-success">
-                            <div class="size24">68</div>
+                            <div class="size24">75</div>
                             Curados
                         </div>
                     </div>
@@ -104,39 +105,76 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <div class="clock">{{time}}</div>
                         <span>{{date}}</span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
-
-
-
             <div class="highlight">
                 <h2 id="destaques">Destaques</h2>
-
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="neumorphism news">
+                            <img src="imgs/entrega.png" alt="img">
+                            <div>
+                                <a @click="loadModal($event)" href="https://forms.gle/VZNVUiBRZfiBdvf19">
+                                    <br><strong>Entregas</strong>
+                                    <br>Faz entregas ao domicílio ou sabe quem faça? Faça sua recomendação!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="neumorphism news">
+                            <img src="imgs/banco-alimentar.png" alt="img">
+                            <div>
+                                <a @click="loadModal($event)" href="https://www.bancoalimentar.pt/bancos/oeste/">
+                                    <br><strong>Ajuda</strong>
+                                    <br>Banco alimentar do Oeste
+                                    <br><small>Caldas da Rainha - 262 838 224 | 926 835 535/545</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="neumorphism news">
+                            <img src="imgs/vizinho-amigo.png" alt="img">
+                            <div>
+                                <a @click="loadModal($event)" href="https://www.facebook.com/Vizinho-Amigo-111145073840476/">
+                                    <br><strong>Vizinho Amigo</strong>
+                                    <br>Jovens voluntários prontos pra ajudar quem precisa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/live-nossa-colab.jpg)">
                         </div>
-                        <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
-                            A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
+                        <a target="_blank" href="https://www.sympla.com.br/como-ser-camaleao-na-crise-do-coronavirus__830077" class="description size24">
+                            Papo colaborativo online. Clique aqui pra se inscrever.
+                        </a>
+                        <br>
+                        <a target="_blank" href="https://www.instagram.com/heleni.barreto/" class="description size24">
+                        <small>Recomendado por: Heleni Barreto</small> 
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/donation.jpg)">
                         </div>
-                        <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
-                            O que você precisa saber hoje sobre o coronavírus
+                        <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size24">
+                        Coleta de alimentos para famílias em necessidade. Falar com Anah Cremonese e Alexandra. 
+                        <br> <small>351 914 128 532</small>
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/jobs.png)">
                         </div>
-                        <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
-                            Ponto de Situação Atual em Portugal
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdg8s0-15XCe7vCX7gBRRJZhb9F7YEfeMzcFmj0yeXk1-0Xlw/viewform?usp=sf_link/" class="description size24">
+                            Está sem emprego por causa da crise do Covid-19? Cadastre-se nesse formulário! Divulgaremos vagas em breve!
                         </a>
                     </div>
                 </div>
@@ -262,6 +300,30 @@
 
                 <div class="row">
                     <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/queroajudar.png)">
+                        </div>
+                        <a target="_blank" href="https://app.queroajudar.org//" class="description size24">
+                            Quero ajudar! Uma aplicação portuguesa de entreajuda comunitária
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/vizinho.png)">
+                        </div>
+                        <a target="_blank" href="https://sosvizinho.pt/" class="description size24">
+                            Ajuda à grupos de risco.
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/help.png)">
+                        </div>
+                        <a target="_blank" href="#" class="description size24">
+                            Ajuda para grupos de risco. Compras, farmácia e etc (Tornada e Salir do Porto)
+                            <br><small>910 422 918</small>
+                        </a>
+                    </div>
+
+                <div class="row">
+                    <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/covidografia.png)">
                         </div>
                         <a target="_blank" href="https://covidografia.pt/" class="description size24">
@@ -269,7 +331,8 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.jpg)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.png
+                        ">
                         </div>
                         <a target="_blank" href="https://covidapp.pt/about/home" class="description size24">
                             Monitorize os seus sintomas do COVID-19 de forma segura e gratuita!
@@ -285,6 +348,34 @@
                 </div>
             </div>
 
+
+            <div class="section">
+                <h2 id="Para o seu negócio">Para o seu negócio</h2>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
+                        </div>
+                        <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
+                            A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
+                        </div>
+                        <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
+                            O que você precisa saber hoje sobre o coronavírus
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
+                        </div>
+                        <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
+                            Ponto de Situação Atual em Portugal
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <div class="business" id="map">
                 <h2 class="mt-5">Mapa da disseminação</h2>
