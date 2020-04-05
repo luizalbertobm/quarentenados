@@ -117,7 +117,7 @@
                             <img src="imgs/entrega.png" alt="img">
                             <div>
                                 <a @click="loadModal($event)" href="https://forms.gle/VZNVUiBRZfiBdvf19">
-                                    <br><strong>Entregas</strong>
+                                    <strong>Entregas</strong>
                                     <br>Faz entregas ao domicílio ou sabe quem faça? Faça sua recomendação!
                                 </a>
                             </div>
@@ -128,7 +128,7 @@
                             <img src="imgs/banco-alimentar.png" alt="img">
                             <div>
                                 <a @click="loadModal($event)" href="https://www.bancoalimentar.pt/bancos/oeste/">
-                                    <br><strong>Ajuda</strong>
+                                    <strong>Ajuda</strong>
                                     <br>Banco alimentar do Oeste
                                     <br><small>Caldas da Rainha - 262 838 224 | 926 835 535/545</small>
                                 </a>
@@ -140,7 +140,7 @@
                             <img src="imgs/vizinho-amigo.png" alt="img">
                             <div>
                                 <a @click="loadModal($event)" href="https://www.facebook.com/Vizinho-Amigo-111145073840476/">
-                                    <br><strong>Vizinho Amigo</strong>
+                                    <strong>Vizinho Amigo</strong>
                                     <br>Jovens voluntários prontos pra ajudar quem precisa
                                 </a>
                             </div>
