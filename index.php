@@ -75,10 +75,11 @@
         <div class="container mt-4">
 
             <div class="info">
+            <small>Situação atual de Portugal</small>
                 <div class="row">
                     <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">66.895</div>
+                            <div class="size24">86,370</div>
                             suspeitos
                         </div>
                     </div>
@@ -116,33 +117,34 @@
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism news">
-                            <img src="imgs/remote-job.png" alt="img">
+                            <img src="imgs/entrega.png" alt="img">
                             <div>
-                                <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
-                                    <br><strong>Negócios</strong>
-                                    <br>Covid-19, o que podem fazer as empresas diante deste desafio?
+                                <a @click="loadModal($event)" href="https://forms.gle/VZNVUiBRZfiBdvf19">
+                                    <br><strong>Entregas</strong>
+                                    <br>Faz entregas ao domicílio ou sabe quem faça? Faça sua recomendação!
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism news">
-                            <img src="imgs/picodovirus.png" alt="img">
+                            <img src="imgs/banco-alimentar.png" alt="img">
                             <div>
-                                <a @click="loadModal($event)" href="https://www.publico.pt/2020/03/28/sociedade/noticia/especialista-mudanca-hora-aumenta-risco-infeccao-1909927">
-                                    <br><strong>Rotina</strong>
-                                    <br>Mudança da hora aumenta risco de infecção
+                                <a @click="loadModal($event)" href="https://www.bancoalimentar.pt/bancos/oeste/">
+                                    <br><strong>Ajuda</strong>
+                                    <br>Banco alimentar do Oeste
+                                    <br><small>Caldas da Rainha - 262 838 224 | 926 835 535/545</small>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism news">
-                            <img src="imgs/remote-job.png" alt="img">
+                            <img src="imgs/vizinho-amigo.png" alt="img">
                             <div>
-                                <a @click="loadModal($event)" href="https://www.publico.pt/2020/03/27/sociedade/noticia/coronavirus-pico-surto-portugal-sera-mes-maio-1909818">
-                                    <br><strong>Corona</strong>
-                                    <br>Pico do surto em Portugal nunca será antes de maio
+                                <a @click="loadModal($event)" href="https://www.facebook.com/Vizinho-Amigo-111145073840476/">
+                                    <br><strong>Vizinho Amigo</strong>
+                                    <br>Jovens voluntários prontos pra ajudar quem precisa
                                 </a>
                             </div>
                         </div>
@@ -298,6 +300,30 @@
 
                 <div class="row">
                     <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/queroajudar.png)">
+                        </div>
+                        <a target="_blank" href="https://app.queroajudar.org//" class="description size24">
+                            Quero ajudar! Uma aplicação portuguesa de entreajuda comunitária
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/vizinho.png)">
+                        </div>
+                        <a target="_blank" href="https://sosvizinho.pt/" class="description size24">
+                            Ajuda à grupos de risco.
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/help.png)">
+                        </div>
+                        <a target="_blank" href="#" class="description size24">
+                            Ajuda para grupos de risco. Compras, farmácia e etc (Tornada e Salir do Porto)
+                            <br><small>910 422 918</small>
+                        </a>
+                    </div>
+
+                <div class="row">
+                    <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/covidografia.png)">
                         </div>
                         <a target="_blank" href="https://covidografia.pt/" class="description size24">
@@ -305,7 +331,8 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.jpg)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.png
+                        ">
                         </div>
                         <a target="_blank" href="https://covidapp.pt/about/home" class="description size24">
                             Monitorize os seus sintomas do COVID-19 de forma segura e gratuita!
@@ -321,8 +348,9 @@
                 </div>
             </div>
 
+
             <div class="section">
-                <h2 id="Para o seu negócio">Destaques</h2>
+                <h2 id="Para o seu negócio">Para o seu negócio</h2>
 
                 <div class="row">
                     <div class="col-md-4">
