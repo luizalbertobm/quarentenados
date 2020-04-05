@@ -31,6 +31,7 @@
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 </head>
@@ -74,13 +75,13 @@
         </nav>
         <div class="container mt-4">
 
+            <p class=""><strong>Situação atual de Portugal</strong></p>
             <div class="info">
-            <small>Situação atual de Portugal</small>
                 <div class="row">
                     <div class="col-4 col-sm-3 mb-4">
-                        <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">86,370</div>
-                            suspeitos
+                        <div class="neumorphism p-3 h-100 w-100 d-inline-block text-success">
+                            <div class="size24"><strong>75</strong></div>
+                            <strong>Curados</strong>
                         </div>
                     </div>
                     <div class="col-4 col-sm-3 mb-4">
@@ -90,9 +91,9 @@
                         </div>
                     </div>
                     <div class="col-4 col-sm-3 mb-4">
-                        <div class="neumorphism p-3 h-100 w-100 d-inline-block text-success">
-                            <div class="size24">75</div>
-                            Curados
+                        <div class="neumorphism p-3 h-100 w-100 d-inline-block">
+                            <div class="size24">86,370</div>
+                            suspeitos
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -105,10 +106,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-md-3">
-                        <div class="clock">{{time}}</div>
-                        <span>{{date}}</span>
-                    </div> -->
                 </div>
             </div>
 
@@ -159,15 +156,15 @@
                         </a>
                         <br>
                         <a target="_blank" href="https://www.instagram.com/heleni.barreto/" class="description size24">
-                        <small>Recomendado por: Heleni Barreto</small> 
+                            <small>Recomendado por: Heleni Barreto</small>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/donation.jpg)">
                         </div>
                         <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size24">
-                        Coleta de alimentos para famílias em necessidade. Falar com Anah Cremonese e Alexandra. 
-                        <br> <small>351 914 128 532</small>
+                            Coleta de alimentos para famílias em necessidade. Falar com Anah Cremonese e Alexandra.
+                            <br> <small>351 914 128 532</small>
                         </a>
                     </div>
                     <div class="col-md-4">
@@ -322,131 +319,130 @@
                         </a>
                     </div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/covidografia.png)">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="neumorphism box mb-3" style="background-image: url(imgs/covidografia.png)">
+                            </div>
+                            <a target="_blank" href="https://covidografia.pt/" class="description size24">
+                                Um app para verificar os sintomas dos Portugueses ( Cadastro apenas pela conta do Facebook)
+                            </a>
                         </div>
-                        <a target="_blank" href="https://covidografia.pt/" class="description size24">
-                            Um app para verificar os sintomas dos Portugueses ( Cadastro apenas pela conta do Facebook)
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.png
-                        ">
+                        <div class="col-md-4">
+                            <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.png)">
+                            </div>
+                            <a target="_blank" href="https://covidapp.pt/about/home" class="description size24">
+                                Monitorize os seus sintomas do COVID-19 de forma segura e gratuita!
+                            </a>
                         </div>
-                        <a target="_blank" href="https://covidapp.pt/about/home" class="description size24">
-                            Monitorize os seus sintomas do COVID-19 de forma segura e gratuita!
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/covideapp.png)">
-                        </div>
-                        <a target="_blank" href="http://covidapp.ufsc.br/" class="description size24">
-                            CovidApp - Como ajudar no controle da Pandemia do Corona Vírus?
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="section">
-                <h2 id="Para o seu negócio">Para o seu negócio</h2>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
-                        </div>
-                        <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
-                            A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
-                        </div>
-                        <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
-                            O que você precisa saber hoje sobre o coronavírus
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
-                        </div>
-                        <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
-                            Ponto de Situação Atual em Portugal
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="business" id="map">
-                <h2 class="mt-5">Mapa da disseminação</h2>
-                <div class="row">
-                    <div class="col-md-12 ">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.bing.com/covid" frameborder="0" style="width: 100%; height: 600px" allowfullscreen></iframe>
+                        <div class="col-md-4">
+                            <div class="neumorphism box mb-3" style="background-image: url(imgs/covideapp.png);">
+                            </div>
+                            <a target="_blank" href="http://covidapp.ufsc.br/" class="description size24">
+                                CovidApp - Como ajudar no controle da Pandemia do Corona Vírus?
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="promotions" id="videos">
-                <h2 class="mt-5">Videos</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="neumorphism">
+
+                <div class="section">
+                    <h2 id="Para o seu negócio">Para o seu negócio</h2>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
+                            </div>
+                            <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
+                                A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
+                            </div>
+                            <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
+                                O que você precisa saber hoje sobre o coronavírus
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
+                            </div>
+                            <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
+                                Ponto de Situação Atual em Portugal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="business" id="map">
+                    <h2 class="mt-5">Mapa da disseminação</h2>
+                    <div class="row">
+                        <div class="col-md-12 ">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" style="border-radius: 15px; " src="https://www.youtube.com/embed/4yIR2rxwV-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="https://app.developer.here.com/coronavirus/" frameborder="0" style="width: 100%; height: 600px" allowfullscreen></iframe>
                             </div>
                         </div>
-                        <p class="description size24">
-                            Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
-                        </p>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="neumorphism">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ra7i39lotk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-                        </div>
-                        <p class="description size24">
-                            Atila Iamarino comenta teorias relacionadas à origem do novo coronavírus
-                        </p>
                     </div>
                 </div>
-            </div>
 
-            <div class="health">
-
-            </div>
-
-            <div class="food">
-
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myModalLabel">{{news.title}}</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                <div class="promotions" id="videos">
+                    <h2 class="mt-5">Videos</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="neumorphism">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" style="border-radius: 15px; " src="https://www.youtube.com/embed/4yIR2rxwV-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <p class="description size24">
+                                Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
+                            </p>
                         </div>
-                        <div class="modal-body">
-                            <iframe id="iframe" style="border:none; width:100%; height:350px" :src="news.externalLink"></iframe>
+                        <div class="col-md-6 mb-4">
+                            <div class="neumorphism">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ra7i39lotk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+                            </div>
+                            <p class="description size24">
+                                Atila Iamarino comenta teorias relacionadas à origem do novo coronavírus
+                            </p>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+
+                <div class="health">
+
+                </div>
+
+                <div class="food">
+
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel">{{news.title}}</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe id="iframe" style="border:none; width:100%; height:350px" :src="news.externalLink"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <script src="vendor/components/jquery/jquery.min.js"></script>
-    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+        <script type="application/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+        <script type="application/javascript" src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="js/app.js"></script>
 
 </body>
 
