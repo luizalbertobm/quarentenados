@@ -76,21 +76,21 @@
 
             <div class="info">
                 <div class="row">
-                    <div class="col-4 col-sm-2 mb-4">
+                    <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
                             <div class="size24">66.895</div>
                             suspeitos
                         </div>
                     </div>
-                    <div class="col-4 col-sm-2 mb-4">
+                    <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">9.034</div>
+                            <div class="size24">11,278</div>
                             Confimados
                         </div>
                     </div>
-                    <div class="col-4 col-sm-2 mb-4">
+                    <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block text-success">
-                            <div class="size24">68</div>
+                            <div class="size24">75</div>
                             Curados
                         </div>
                     </div>
@@ -104,10 +104,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <div class="clock">{{time}}</div>
                         <span>{{date}}</span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
