@@ -15,8 +15,8 @@
         gtag('config', 'UA-162791347-1');
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- social metas -->
     <meta property="og:site_name" content="Quarentenados">
@@ -32,7 +32,7 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 </head>
 
