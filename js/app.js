@@ -43,3 +43,7 @@ function zeroPadding(num, digit) {
     }
     return (zero + num).slice(-digit);
 }
+
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});

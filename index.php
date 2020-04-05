@@ -38,7 +38,7 @@
 <body id="">
 
     <div id="app">
-        <nav class="navbar sticky-top navbar-light bg-light navbar-expand-lg">
+        <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg">
             <a class="navbar-brand" href="#">
                 <img src="imgs/logo-qmdpi.png" height="30" alt="">
             </a>
