@@ -75,7 +75,7 @@
         </nav>
         <div class="container mt-4">
 
-            <p class=""><strong>Situação atual de Portugal</strong></p>
+            <p class=""><strong>Situação atual em Portugal:</strong></p>
             <div class="info">
                 <div class="row">
                     <div class="col-4 col-sm-3 mb-4">
@@ -100,9 +100,7 @@
                         <div class="neumorphism news">
                             <img src="imgs/24-h.png" alt="img">
                             <div>
-                                <a href="http://">
-                                    <strong>Ajuda</strong> <br> Sente tosse, febre ou falta de ar? Ligue <strong>SNS24 808 24 24 24</strong>
-                                </a>
+                                <strong>Ajuda</strong> <br> Sente tosse, febre ou falta de ar? Ligue <strong>SNS24 808 24 24 24</strong>
                             </div>
                         </div>
                     </div>
@@ -116,7 +114,7 @@
                         <div class="neumorphism news">
                             <img src="imgs/entrega.png" alt="img">
                             <div>
-                                <a @click="loadModal($event)" href="https://forms.gle/VZNVUiBRZfiBdvf19">
+                                <a target="_blank" href="https://forms.gle/VZNVUiBRZfiBdvf19">
                                     <strong>Entregas</strong>
                                     <br>Faz entregas ao domicílio ou sabe quem faça? Faça sua recomendação!
                                 </a>
@@ -127,7 +125,7 @@
                         <div class="neumorphism news">
                             <img src="imgs/banco-alimentar.png" alt="img">
                             <div>
-                                <a @click="loadModal($event)" href="https://www.bancoalimentar.pt/bancos/oeste/">
+                                <a target="_blank" href="https://www.bancoalimentar.pt/bancos/oeste/">
                                     <strong>Ajuda</strong>
                                     <br>Banco alimentar do Oeste
                                     <br><small>Caldas da Rainha - 262 838 224 | 926 835 535/545</small>
@@ -139,7 +137,7 @@
                         <div class="neumorphism news">
                             <img src="imgs/vizinho-amigo.png" alt="img">
                             <div>
-                                <a @click="loadModal($event)" href="https://www.facebook.com/Vizinho-Amigo-111145073840476/">
+                                <a target="_blank" href="https://www.facebook.com/Vizinho-Amigo-111145073840476/">
                                     <strong>Vizinho Amigo</strong>
                                     <br>Jovens voluntários prontos pra ajudar quem precisa
                                 </a>
@@ -184,7 +182,7 @@
                         <div class="neumorphism news">
                             <img src="imgs/remote-job.png" alt="img">
                             <div>
-                                <a @click="loadModal($event)" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
+                                <a target="_blank" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
                                     <br><strong>Negócios</strong>
                                     <br>Covid-19, o que podem fazer as empresas diante deste desafio?
                                 </a>
@@ -195,7 +193,7 @@
                         <div class="neumorphism news">
                             <img src="imgs/picodovirus.png" alt="img">
                             <div>
-                                <a @click="loadModal($event)" href="https://www.publico.pt/2020/03/28/sociedade/noticia/especialista-mudanca-hora-aumenta-risco-infeccao-1909927">
+                                <a target="_blank" href="https://www.publico.pt/2020/03/28/sociedade/noticia/especialista-mudanca-hora-aumenta-risco-infeccao-1909927">
                                     <br><strong>Rotina</strong>
                                     <br>Mudança da hora aumenta risco de infecção
                                 </a>
@@ -206,7 +204,7 @@
                         <div class="neumorphism news">
                             <img src="imgs/remote-job.png" alt="img">
                             <div>
-                                <a @click="loadModal($event)" href="https://www.publico.pt/2020/03/27/sociedade/noticia/coronavirus-pico-surto-portugal-sera-mes-maio-1909818">
+                                <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/coronavirus-pico-surto-portugal-sera-mes-maio-1909818">
                                     <br><strong>Corona</strong>
                                     <br>Pico do surto em Portugal nunca será antes de maio
                                 </a>
