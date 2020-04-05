@@ -55,22 +55,7 @@
                     <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnologia</a></li>
                     <li class="nav-item"><a class="nav-link" href="#map">Mapa de disseminação</a></li>
                     <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Outros
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li> -->
                 </ul>
-                <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form> -->
             </div>
         </nav>
         <div class="container mt-4">
@@ -317,29 +302,29 @@
                         </a>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="neumorphism box mb-3" style="background-image: url(imgs/covidografia.png)">
-                            </div>
-                            <a target="_blank" href="https://covidografia.pt/" class="description size24">
-                                Um app para verificar os sintomas dos Portugueses ( Cadastro apenas pela conta do Facebook)
-                            </a>
+
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/covidografia.png)">
                         </div>
-                        <div class="col-md-4">
-                            <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.png)">
-                            </div>
-                            <a target="_blank" href="https://covidapp.pt/about/home" class="description size24">
-                                Monitorize os seus sintomas do COVID-19 de forma segura e gratuita!
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="neumorphism box mb-3" style="background-image: url(imgs/covideapp.png);">
-                            </div>
-                            <a target="_blank" href="http://covidapp.ufsc.br/" class="description size24">
-                                CovidApp - Como ajudar no controle da Pandemia do Corona Vírus?
-                            </a>
-                        </div>
+                        <a target="_blank" href="https://covidografia.pt/" class="description size24">
+                            Um app para verificar os sintomas dos Portugueses ( Cadastro apenas pela conta do Facebook)
+                        </a>
                     </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.png)">
+                        </div>
+                        <a target="_blank" href="https://covidapp.pt/about/home" class="description size24">
+                            Monitorize os seus sintomas do COVID-19 de forma segura e gratuita!
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/covideapp.png);">
+                        </div>
+                        <a target="_blank" href="http://covidapp.ufsc.br/" class="description size24">
+                            CovidApp - Como ajudar no controle da Pandemia do Corona Vírus?
+                        </a>
+                    </div>
+
                 </div>
 
 
@@ -375,8 +360,8 @@
                     <h2 class="mt-5">Mapa da disseminação</h2>
                     <div class="row">
                         <div class="col-md-12 ">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://app.developer.here.com/coronavirus/" frameborder="0" style="width: 100%; height: 600px" allowfullscreen></iframe>
+                            <div class="">
+                                <iframe class="" src="https://www.bing.com/covid/local/portugal" frameborder="0" style="width: 100%; height: 600px" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
