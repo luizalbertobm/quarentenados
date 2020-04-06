@@ -225,7 +225,7 @@
                             Sem Culpa
                             <br>
                             <small>Bolos Saudáveis, muffins, muffins xl e fatia.</small>
-                            <br><small>Reconmendado por Juliana Albano</small>
+                            <br><small>Recomendado por Juliana Albano</small>
                         </a>
                     </div>
                     <div class="col-md-4">
@@ -245,7 +245,7 @@
                             Eusebio Hamburgueria
                             <br>
                             <small>Pedidos de 16 as 24h</small>
-                           <br><small>Recomendado por Roberto Evangelista</small>
+                           <br><small>Recomendado por: Roberto Evangelista</small>
                         </a>
                     </div>
                     <div class="col-md-4">
@@ -264,7 +264,7 @@
                             Studio M Barber
                             <br>
                             <small>Barbearia Self-Service</small> <br>
-                            <small>Recomendado por Luiz Alberto</small>
+                            <small>Recomendado por: Luiz Alberto</small>
                         </a>
                     </div>
 
@@ -275,9 +275,21 @@
                             Art Bake - Bolos caseiros
                             <br>
                             <small>Pegar no local - 917 378 117</small>
-                            <br><small>Reconmendado por Julia Nascimento</small>
+                            <br><small>Recomendado por: Julia Nascimento</small>
                         </a>
                     </div>
+
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/sabores-da-rainha.png)">
+                        </div>
+                        <a target="_blank" href="https://www.facebook.com/SRRestaurantes/" class="description size18">
+                            Restaurante Sabores da Rainha
+                            <br>
+                            <small>Entregas e take away - 262 836 111</small>
+                            <br><small>Recomendado por: Renata Guedes</small>
+                        </a>
+                    </div>
+
                 </div>
             </div>
 
