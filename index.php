@@ -278,6 +278,18 @@
                             <br><small>Recomendação da Julia Nascimento</small>
                         </a>
                     </div>
+
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/sabores-da-rainha.png)">
+                        </div>
+                        <a target="_blank" href="https://www.facebook.com/SRRestaurantes/" class="description size24">
+                            Restaurantes Sabores da Rainha
+                            <br>
+                            <small>Entregas e take away - 262 836 111</small>
+                            <br><small>Recomendação da Renata Guedes</small>
+                        </a>
+                    </div>
+
                 </div>
             </div>
 
