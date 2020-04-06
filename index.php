@@ -64,19 +64,19 @@
                 <div class="row">
                     <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block text-success">
-                            <div class="size24"><strong>{{covid.recovered}}</strong></div>
+                            <div class="size24"><strong>{{covid.recovered | numberFormat}}</strong></div>
                             <strong>Curados</strong>
                         </div>
                     </div>
                     <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">{{covid.active}}</div>
+                            <div class="size24">{{covid.active  | numberFormat}}</div>
                             Ativos
                         </div>
                     </div>
                     <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">{{covid.cases}}</div>
+                            <div class="size24">{{covid.cases | numberFormat}}</div>
                             Confirmados
                         </div>
                     </div>
