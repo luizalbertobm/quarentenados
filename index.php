@@ -137,14 +137,14 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/live-nossa-colab.jpg)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/doce-pascal.png)">
                         </div>
-                        <a target="_blank" href="https://www.sympla.com.br/como-ser-camaleao-na-crise-do-coronavirus__830077" class="description size18">
-                            Papo colaborativo online. Clique aqui pra se inscrever.
+                        <a target="_blank" href="https://www.facebook.com/docepascoal/" class="description size18">
+                            Ovos de colher da Doce Pascal para entrega! 
                         </a>
                         <br>
-                        <a target="_blank" href="https://www.instagram.com/heleni.barreto/" class="description size18">
-                            <small>Recomendado por: Heleni Barreto</small>
+                        <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size18">
+                            <small>Recomendado por: Anah Cremonese</small>
                         </a>
                     </div>
                     <div class="col-md-4">
@@ -225,7 +225,7 @@
                             Sem Culpa
                             <br>
                             <small>Bolos Saudáveis, muffins, muffins xl e fatia.</small>
-                            <br><small>Recomendado por Juliana Albano</small>
+                            <br><small>Recomendado por Juliana Libanio</small>
                         </a>
                     </div>
                     <div class="col-md-4">
@@ -263,7 +263,7 @@
                         <a target="_blank" href="https://instagram.com/studiombarber?igshid=1ujuijloqenqd" class="description size18">
                             Studio M Barber
                             <br>
-                            <small>Barbearia Self-Service</small> <br>
+                            <small>Barbearia Delivery</small> <br>
                             <small>Recomendado por: Luiz Alberto</small>
                         </a>
                     </div>
