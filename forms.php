@@ -25,7 +25,7 @@
     <div id="app" class="container">
         <img src="imgs/logo-qmdpi.png" height="30" alt="">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
 
                 <div class="card">
                     <div class="card-body">
@@ -61,34 +61,44 @@
                                     <label for="">Imagem</label>
                                     <input type="text" class="form-control" v-model="store.image">
                                 </div>
-                                <div class="form-group">
+                                <img :src="`http://quarentenados.com/imgs/${store.image}`" alt="" class="img-thumbnail">
+                                <!-- <div class="form-group">
                                     <label for="">Telefone</label>
                                     <input type="text" class="form-control" v-model="store.phone">
-                                </div>
-                                <button class="btn btn-primary" @click="addStore">Adicionar</button>
+                                </div> -->
+                                <button class="btn btn-primary" @click="addStore">Gravar</button>
                             </div>
                             <div class="tab-pane fade" id="list-stores" role="tabpanel" aria-labelledby="list-stores">
-                                <table class="table teble-condensed">
-                                    <thead>
-                                        <tr>
-                                            <th>Nome</th>
-                                            <th>Descriçao</th>
-                                            <th>Indicante</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr v-for="(store, index) in stores" :key="index">
-                                            <td>{{store.name}}</td>
-                                            <td>{{store.description}}</td>
-                                            <td>{{store.ig_user}}</td>
-                                            <td>
-                                                <button class="btn btn-sm btn-danger" @click="removeStore(index)"> <i class="fa fa-trash"></i> </button>
-                                                <button class="btn btn-sm btn-info" @click="editStore(index)"> <i class="fa fa-pencil"></i> </button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="table-responsive">
+                                    <table class="table teble-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 100px">Img</th>
+                                                <th>Nome</th>
+                                                <th>Indicante</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-for="(store, index) in stores" :key="index">
+                                                <td><img :src="`http://quarentenados.com/imgs/${store.image}`" alt="" class="img-thumbnail"></td>
+                                                <td> <strong>{{store.name}}</strong> <br> {{store.description}}</td>
+                                                <td> <small>{{store.ig_user}}</small></td>
+                                                <td>
+                                                    <div class="btn-group" role="group">
+                                                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            Opções
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                            <a class="dropdown-item text-danger" href="#" @click="removeStore(index)"> <i class="fa fa-trash"></i> Excluir</a>
+                                                            <a class="dropdown-item" href="#" @click="editStore(index)"><i class="fa fa-pencil"></i> Editar</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
 
@@ -96,7 +106,7 @@
                 </div>
 
             </div>
-            
+
         </div>
     </div>
 
@@ -123,7 +133,7 @@
         var app = new Vue({
             el: '#app',
             data: {
-                id:null,
+                id: null,
                 stores: [],
                 store: {
                     name: '',
@@ -137,7 +147,7 @@
             methods: {
                 addStore() {
                     const method = this.id ? 'patch' : 'post'
-                    const finalURL = this.id ? `/${this.id}.json`:  '.json'
+                    const finalURL = this.id ? `/${this.id}.json` : '.json'
                     $http[method](`stores${finalURL}`, this.store)
                         .then(res => {
                             this.cleanStore()
@@ -146,7 +156,9 @@
                 },
                 editStore(id) {
                     this.id = id
-                    this.store = {...this.stores[id]}
+                    this.store = {
+                        ...this.stores[id]
+                    }
                     $('#home-tab').click()
                 },
                 removeStore(id) {

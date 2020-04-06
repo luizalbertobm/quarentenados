@@ -214,12 +214,14 @@
 
                 <div class="row">
                     <div class="col-md-4" v-for="(store, index) in stores" :key="index">
-                        <div class="neumorphism box mb-3" :style="`background-image: url(${store.image})`">
-                        </div>
-                        <a target="_blank" :href="store.externalLink" class="description size18">
-                            {{store.name}}
+                        <a target="_blank" :href="store.externalLink">
+                            <div class="neumorphism box mb-3" :style="`background-image: url(http://quarentenados.com/imgs/${store.image})`">
+                            </div>
+                        </a>
+                        <a target="_blank" :href="store.externalLink" class="description size18">{{store.name}}</a>
                             <br>
-                            <small>{{store.description}}</small>
+                            <span>{{store.description}}</span> <br>
+                            <small>indicado por <a target="_blank" :href="`http://instagram.com/${store.ig_user}`">{{store.ig_user}}</a> </small>
                         </a>
                     </div>
 
@@ -363,7 +365,7 @@
     <!-- <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script> -->
     <script src="js/firebase.js"></script>
 
-    
+
 </body>
 
 </html>
