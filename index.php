@@ -240,6 +240,7 @@
                             Sem Culpa
                             <br>
                             <small>Bolos Saudáveis, muffins, muffins xl e fatia.</small>
+                            <br><small>Recomendação da Juliana Albano</small>
                         </a>
                     </div>
                     <div class="col-md-4">
@@ -259,6 +260,7 @@
                             Eusebio Hamburgueria
                             <br>
                             <small>Pedidos de 16 as 24h</small>
+                           <br><small>Recomendação do Roberto Evangelista</small>
                         </a>
                     </div>
                     <div class="col-md-4">
@@ -271,13 +273,13 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/auchan.png)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/barbearia.png)">
                         </div>
-                        <a target="_blank" href="https://auchan.queue-it.net/?c=auchan&e=auchan01&t=https%3A%2F%2Fwww.auchan.pt%2FFrontoffice&cid=pt-PT" class="description size24">
-                            Auchan
+                        <a target="_blank" href="https://instagram.com/studiombarber?igshid=1ujuijloqenqd" class="description size24">
+                            Babearia Self-Service
                             <br>
-                            <small>Hipermercado</small> <br>
-                            <small>Entregas previstas para 31 de abril</small>
+                            <small>925835363</small> <br>
+                            <small>Recomendação do Luiz Alberto</small>
                         </a>
                     </div>
 
@@ -287,8 +289,8 @@
                         <a target="_blank" href="#" class="description size24">
                             Art Bake - Bolos caseiros
                             <br>
-                            <small>Pegar no local</small>
-                            <br><small>917 378 117</small>
+                            <small>Pegar no local - 917 378 117</small>
+                            <br><small>Recomendação da Julia Nascimento</small>
                         </a>
                     </div>
                 </div>
