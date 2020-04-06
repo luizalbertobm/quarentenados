@@ -1,4 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 80px 0 0 0;
+}
+
 body {
+    margin-top: 80px;
     background-color: #ECF0F3;
     color: #6D7278;
     font-family: 'Montserrat', sans-serif;
@@ -83,8 +89,11 @@ a:hover {
 
 .neumorphism {
     border-radius: 20px;
+
     background: #ECF0F3;
     box-shadow: 10px 10px 10px rgba(195, 203, 216, 0.22), -18px -18px 20px #ffffff8e;
+    overflow: hidden;
+    
 }
 
 .neumorphism2 {
@@ -118,8 +127,8 @@ a:hover {
     margin-bottom: -20px;
 }
 
-.size24 {
-    font-size: 16px;
+body .size24, .size24 *{
+    font-size: 24px;
 }
 
 .size14 {
