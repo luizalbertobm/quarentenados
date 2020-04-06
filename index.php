@@ -139,18 +139,18 @@
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/live-nossa-colab.jpg)">
                         </div>
-                        <a target="_blank" href="https://www.sympla.com.br/como-ser-camaleao-na-crise-do-coronavirus__830077" class="description size24">
+                        <a target="_blank" href="https://www.sympla.com.br/como-ser-camaleao-na-crise-do-coronavirus__830077" class="description size18">
                             Papo colaborativo online. Clique aqui pra se inscrever.
                         </a>
                         <br>
-                        <a target="_blank" href="https://www.instagram.com/heleni.barreto/" class="description size24">
+                        <a target="_blank" href="https://www.instagram.com/heleni.barreto/" class="description size18">
                             <small>Recomendado por: Heleni Barreto</small>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/donation.jpg)">
                         </div>
-                        <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size24">
+                        <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size18">
                             Coleta de alimentos para famílias em necessidade. Falar com Anah Cremonese e Alexandra.
                             <br> <small>351 914 128 532</small>
                         </a>
@@ -158,7 +158,7 @@
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/jobs.png)">
                         </div>
-                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdg8s0-15XCe7vCX7gBRRJZhb9F7YEfeMzcFmj0yeXk1-0Xlw/viewform?usp=sf_link/" class="description size24">
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdg8s0-15XCe7vCX7gBRRJZhb9F7YEfeMzcFmj0yeXk1-0Xlw/viewform?usp=sf_link/" class="description size18">
                             Está sem emprego por causa da crise do Covid-19? Cadastre-se nesse formulário! Divulgaremos vagas em breve!
                         </a>
                     </div>
@@ -212,7 +212,7 @@
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/casaantero.png)">
                         </div>
-                        <a target="_blank" href="https://www.instagram.com/casaantero/" class="description size24">
+                        <a target="_blank" href="https://www.instagram.com/casaantero/" class="description size18">
                             Casa Antero
                             <br>
                             <small>Encomendas até às 10h.</small>
@@ -221,17 +221,17 @@
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/saudaveissemculpa.png)">
                         </div>
-                        <a target="_blank" href="https://www.instagram.com/saudaveissemculpa/" class="description size24">
+                        <a target="_blank" href="https://www.instagram.com/saudaveissemculpa/" class="description size18">
                             Sem Culpa
                             <br>
                             <small>Bolos Saudáveis, muffins, muffins xl e fatia.</small>
-                            <br><small>Recomendação da Juliana Albano</small>
+                            <br><small>Reconmendado por Juliana Albano</small>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/leef.jpg)">
                         </div>
-                        <a target="_blank" href="https://www.instagram.com/leefyourlife/" class="description size24">
+                        <a target="_blank" href="https://www.instagram.com/leefyourlife/" class="description size18">
                             Leef
                             <br>
                             <small>Entregas Terça e sextas</small>
@@ -241,17 +241,17 @@
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/eusebio.png)">
                         </div>
-                        <a target="_blank" href="https://www.instagram.com/eusebioshamburgueria/" class="description size24">
+                        <a target="_blank" href="https://www.instagram.com/eusebioshamburgueria/" class="description size18">
                             Eusebio Hamburgueria
                             <br>
                             <small>Pedidos de 16 as 24h</small>
-                           <br><small>Recomendação do Roberto Evangelista</small>
+                           <br><small>Recomendado por Roberto Evangelista</small>
                         </a>
                     </div>
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/mercachefe.jpg)">
                         </div>
-                        <a target="_blank" href="https://mercachefe.pt/pt/" class="description size24">
+                        <a target="_blank" href="https://mercachefe.pt/pt/" class="description size18">
                             MercaChefe
                             <br>
                             <small>Hipermercado</small>
@@ -260,22 +260,22 @@
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/barbearia.png)">
                         </div>
-                        <a target="_blank" href="https://instagram.com/studiombarber?igshid=1ujuijloqenqd" class="description size24">
-                            Babearia Self-Service
+                        <a target="_blank" href="https://instagram.com/studiombarber?igshid=1ujuijloqenqd" class="description size18">
+                            Studio M Barber
                             <br>
-                            <small>925835363</small> <br>
-                            <small>Recomendação do Luiz Alberto</small>
+                            <small>Barbearia Self-Service</small> <br>
+                            <small>Recomendado por Luiz Alberto</small>
                         </a>
                     </div>
 
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/art-bake.png)">
                         </div>
-                        <a target="_blank" href="#" class="description size24">
+                        <a target="_blank" href="#" class="description size18">
                             Art Bake - Bolos caseiros
                             <br>
                             <small>Pegar no local - 917 378 117</small>
-                            <br><small>Recomendação da Julia Nascimento</small>
+                            <br><small>Reconmendado por Julia Nascimento</small>
                         </a>
                     </div>
 
@@ -301,21 +301,21 @@
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/queroajudar.png)">
                         </div>
-                        <a target="_blank" href="https://app.queroajudar.org//" class="description size24">
+                        <a target="_blank" href="https://app.queroajudar.org//" class="description size18">
                             Quero ajudar! Uma aplicação portuguesa de entreajuda comunitária
                         </a>
                     </div>
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/vizinho.png)">
                         </div>
-                        <a target="_blank" href="https://sosvizinho.pt/" class="description size24">
+                        <a target="_blank" href="https://sosvizinho.pt/" class="description size18">
                             Ajuda à grupos de risco.
                         </a>
                     </div>
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/help.png)">
                         </div>
-                        <a target="_blank" href="#" class="description size24">
+                        <a target="_blank" href="#" class="description size18">
                             Ajuda para grupos de risco. Compras, farmácia e etc (Tornada e Salir do Porto)
                             <br><small>910 422 918</small>
                         </a>
@@ -325,21 +325,21 @@
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/covidografia.png)">
                         </div>
-                        <a target="_blank" href="https://covidografia.pt/" class="description size24">
+                        <a target="_blank" href="https://covidografia.pt/" class="description size18">
                             Um app para verificar os sintomas dos Portugueses ( Cadastro apenas pela conta do Facebook)
                         </a>
                     </div>
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/quarentena.f40da744.png)">
                         </div>
-                        <a target="_blank" href="https://covidapp.pt/about/home" class="description size24">
+                        <a target="_blank" href="https://covidapp.pt/about/home" class="description size18">
                             Monitorize os seus sintomas do COVID-19 de forma segura e gratuita!
                         </a>
                     </div>
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/covideapp.png);">
                         </div>
-                        <a target="_blank" href="http://covidapp.ufsc.br/" class="description size24">
+                        <a target="_blank" href="http://covidapp.ufsc.br/" class="description size18">
                             CovidApp - Como ajudar no controle da Pandemia do Corona Vírus?
                         </a>
                     </div>
@@ -354,21 +354,21 @@
                         <div class="col-md-4">
                             <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
                             </div>
-                            <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size24">
+                            <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size18">
                                 A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
                             </a>
                         </div>
                         <div class="col-md-4">
                             <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
                             </div>
-                            <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size24">
+                            <a target="_blank" href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913" class="description size18">
                                 O que você precisa saber hoje sobre o coronavírus
                             </a>
                         </div>
                         <div class="col-md-4">
                             <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
                             </div>
-                            <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size24">
+                            <a target="_blank" href="https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/" class="description size18">
                                 Ponto de Situação Atual em Portugal
                             </a>
                         </div>
@@ -395,7 +395,7 @@
                                     <iframe class="embed-responsive-item" style="border-radius: 15px; " src="https://www.youtube.com/embed/4yIR2rxwV-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>
-                            <p class="description size24">
+                            <p class="description size18">
                                 Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
                             </p>
                         </div>
@@ -404,7 +404,7 @@
                                 <div class="embed-responsive embed-responsive-16by9">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ra7i39lotk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
                             </div>
-                            <p class="description size24">
+                            <p class="description size18">
                                 Atila Iamarino comenta teorias relacionadas à origem do novo coronavírus
                             </p>
                         </div>

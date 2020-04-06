@@ -131,7 +131,11 @@ body .size24, .size24 *{
     font-size: 24px;
 }
 
-.size14 {
+.size18 {
+    font-size: 18px;
+}
+.size18 small{
+    
     font-size: 12px;
 }
 
