@@ -23,6 +23,9 @@
     <meta property="og:title" content="Quarentenados">
     <meta property="og:description" content="Fique safe e informado nesta quarentena">
     <meta property="og:image" content="http://www.quarentenados.com/imgs/quarentenados-share.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200"> /** PIXELS **/
+    <meta property="og:image:height" content="630"> /** PIXELS **/
     <meta property="og:url" content="http://www.quarentendados.com">
     <meta name="theme-color" content="#C0BDE8" />
     <title>Quarentenados</title>
@@ -245,7 +248,7 @@
                             Eusebio Hamburgueria
                             <br>
                             <small>Pedidos de 16 as 24h</small>
-                           <br><small>Recomendado por: Roberto Evangelista</small>
+                            <br><small>Recomendado por: Roberto Evangelista</small>
                         </a>
                     </div>
                     <div class="col-md-4">
