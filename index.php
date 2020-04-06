@@ -24,8 +24,8 @@
     <meta property="og:description" content="Fique safe e informado nesta quarentena">
     <meta property="og:image" content="http://www.quarentenados.com/imgs/quarentenados-share.jpg">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200"> /** PIXELS **/
-    <meta property="og:image:height" content="630"> /** PIXELS **/
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="http://www.quarentendados.com">
     <meta name="theme-color" content="#C0BDE8" />
     <title>Quarentenados</title>
