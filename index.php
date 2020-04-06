@@ -17,7 +17,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Quarentenados</title>
 
     <!-- social metas -->
     <meta property="og:site_name" content="Quarentenados">
@@ -26,18 +25,18 @@
     <meta property="og:image" content="http://www.quarentenados.com/imgs/investment-company.png">
     <meta property="og:url" content="http://www.quarentendados.com">
     <meta name="theme-color" content="#C0BDE8" />
+    <title>Quarentenados</title>
 
     <link href="imgs/fav-icon2.png" rel="icon" type="image/x-icon" />
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
-<body id="">
-
+<body>
     <div id="app">
         <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg">
             <a class="navbar-brand" href="#">
@@ -65,20 +64,20 @@
                 <div class="row">
                     <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block text-success">
-                            <div class="size24"><strong>75</strong></div>
+                            <div class="size24"><strong>{{covid.recovered}}</strong></div>
                             <strong>Curados</strong>
                         </div>
                     </div>
                     <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">11,278</div>
-                            Confimados
+                            <div class="size24">{{covid.active}}</div>
+                            Ativos
                         </div>
                     </div>
                     <div class="col-4 col-sm-3 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">86,370</div>
-                            suspeitos
+                            <div class="size24">{{covid.cases}}</div>
+                            Confirmados
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -421,12 +420,13 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="application/javascript" src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
 </body>
 

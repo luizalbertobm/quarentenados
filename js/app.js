@@ -1,25 +1,25 @@
-/* var app = new Vue({
+var app = new Vue({
     el: '#app',
     data: {
+        covid: {},
         news: {
             title: '',
             externalLink: ''
         }
     },
     methods: {
-        loadModal(event) {
-            event.preventDefault()
-            let target = event.target
-            this.news.title = target.textContent
-            this.news.externalLink = target.href
-            //document.getElementById('iframe').contentWindow.location.reload();
 
-            $('#myModal').modal('show')
-        }
     },
-}) */
+    created() {
+        axios.get('https://coronavirus-19-api.herokuapp.com/countries/portugal')
+            .then(res => {
+                console.log(res)
+                this.covid = res.data
+            })
+    },
+})
 
 
-$('.navbar-collapse a').click(function(){
+$('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');
 });
