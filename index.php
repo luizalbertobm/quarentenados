@@ -22,7 +22,10 @@
     <meta property="og:site_name" content="Quarentenados">
     <meta property="og:title" content="Quarentenados">
     <meta property="og:description" content="Fique safe e informado nesta quarentena">
-    <meta property="og:image" content="http://www.quarentenados.com/imgs/investment-company.png">
+    <meta property="og:image" content="http://www.quarentenados.com/imgs/quarentenados-share.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="http://www.quarentendados.com">
     <meta name="theme-color" content="#C0BDE8" />
     <title>Quarentenados</title>
@@ -64,25 +67,25 @@
                 <div class="row">
                     <div class="col-6 col-md-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block text-success">
-                            <div class="size24"><strong>{{covid.recovered | numberFormat}}</strong></div>
+                            <div class="size24"><strong>{{covid.recovered || 0 | numberFormat}}</strong></div>
                             <strong>Curados</strong>
                         </div>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">{{covid.cases | numberFormat}}</div>
+                            <div class="size24">{{covid.cases || 0 | numberFormat}}</div>
                             Confirmados
                         </div>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">{{covid.active  | numberFormat}}</div>
+                            <div class="size24">{{covid.active || 0 | numberFormat}}</div>
                             Ativos
                         </div>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
-                            <div class="size24">{{covid.critical | numberFormat}}</div>
+                            <div class="size24">{{covid.critical || 0 | numberFormat}}</div>
                             Críticos
                         </div>
                     </div>
@@ -245,7 +248,7 @@
                             Eusebio Hamburgueria
                             <br>
                             <small>Pedidos de 16 as 24h</small>
-                           <br><small>Recomendado por: Roberto Evangelista</small>
+                            <br><small>Recomendado por: Roberto Evangelista</small>
                         </a>
                     </div>
                     <div class="col-md-4">
