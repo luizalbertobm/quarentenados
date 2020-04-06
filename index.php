@@ -62,25 +62,25 @@
             <p class=""><strong>Situação atual em Portugal:</strong></p>
             <div class="info">
                 <div class="row">
-                    <div class="col-3 col-md-2 mb-4">
+                    <div class="col-6 col-md-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block text-success">
                             <div class="size24"><strong>{{covid.recovered | numberFormat}}</strong></div>
                             <strong>Curados</strong>
                         </div>
                     </div>
-                    <div class="col-3 col-md-2 mb-4">
+                    <div class="col-6 col-md-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
                             <div class="size24">{{covid.cases | numberFormat}}</div>
                             Confirmados
                         </div>
                     </div>
-                    <div class="col-3 col-md-2 mb-4">
+                    <div class="col-6 col-md-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
                             <div class="size24">{{covid.active  | numberFormat}}</div>
                             Ativos
                         </div>
                     </div>
-                    <div class="col-3 col-md-2 mb-4">
+                    <div class="col-6 col-md-2 mb-4">
                         <div class="neumorphism p-3 h-100 w-100 d-inline-block">
                             <div class="size24">{{covid.critical | numberFormat}}</div>
                             Críticos
