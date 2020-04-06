@@ -33,6 +33,7 @@
     <link href="imgs/fav-icon2.png" rel="icon" type="image/x-icon" />
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
@@ -212,15 +213,16 @@
                 <h2 id="compras">Onde comprar online</h2>
 
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/casaantero.png)">
+                    <div class="col-md-4" v-for="(store, index) in stores" :key="index">
+                        <div class="neumorphism box mb-3" :style="`background-image: url(${store.image})`">
                         </div>
-                        <a target="_blank" href="https://www.instagram.com/casaantero/" class="description size18">
-                            Casa Antero
+                        <a target="_blank" :href="store.externalLink" class="description size18">
+                            {{store.name}}
                             <br>
-                            <small>Encomendas até às 10h.</small>
+                            <small>{{store.description}}</small>
                         </a>
                     </div>
+
                     <div class="col-md-4">
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/saudaveissemculpa.png)">
                         </div>
@@ -414,33 +416,6 @@
                     </div>
                 </div>
 
-                <div class="health">
-
-                </div>
-
-                <div class="food">
-
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="myModalLabel">{{news.title}}</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <iframe id="iframe" style="border:none; width:100%; height:350px" :src="news.externalLink"></iframe>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -451,6 +426,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/app.js"></script>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script> -->
+    <script src="js/firebase.js"></script>
+
+    
 </body>
 
 </html>
