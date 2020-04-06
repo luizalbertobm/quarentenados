@@ -32,7 +32,7 @@
                         <h5 class="card-title">Lojas</h5>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#inser-stores" role="tab" aria-controls="inser-stores" aria-selected="true">cadastro</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#insert-stores" role="tab" aria-controls="insert-stores" aria-selected="true">cadastro</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="list-stores-tab" data-toggle="tab" href="#list-stores" role="tab" aria-controls="list-stores" aria-selected="false">Lista</a>
@@ -40,7 +40,7 @@
                         </ul>
 
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="inser-stores" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="tab-pane fade show active" id="insert-stores" role="tabpanel" aria-labelledby="insert-stores">
                                 <div class="form-group">
                                     <label for="">Nome</label>
                                     <input type="text" class="form-control" v-model="store.name">
@@ -84,6 +84,7 @@
                                             <td>{{store.ig_user}}</td>
                                             <td>
                                                 <button class="btn btn-sm btn-danger" @click="removeStore(index)"> <i class="fa fa-trash"></i> </button>
+                                                <button class="btn btn-sm btn-info" @click="editStore(index)"> <i class="fa fa-pencil"></i> </button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -122,6 +123,7 @@
         var app = new Vue({
             el: '#app',
             data: {
+                id:null,
                 stores: [],
                 store: {
                     name: '',
@@ -134,11 +136,18 @@
             },
             methods: {
                 addStore() {
-                    $http.post('stores.json', this.store)
+                    const method = this.id ? 'patch' : 'post'
+                    const finalURL = this.id ? `/${this.id}.json`:  '.json'
+                    $http[method](`stores${finalURL}`, this.store)
                         .then(res => {
                             this.cleanStore()
                             this.getStores()
                         })
+                },
+                editStore(id) {
+                    this.id = id
+                    this.store = {...this.stores[id]}
+                    $('#home-tab').click()
                 },
                 removeStore(id) {
                     $http.delete(`/stores/${id}.json`)
@@ -155,6 +164,7 @@
                 },
                 cleanStore() {
                     this.store = {}
+                    this.id = null
                 }
             },
             created() {
