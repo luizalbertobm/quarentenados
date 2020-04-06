@@ -91,6 +91,8 @@ a:hover {
     border-radius: 20px;
     background: #ECF0F3;
     box-shadow: 10px 10px 10px rgba(195, 203, 216, 0.22), -18px -18px 20px #ffffff8e;
+    overflow: hidden;
+    
 }
 
 .neumorphism2 {
