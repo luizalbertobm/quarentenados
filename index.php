@@ -22,7 +22,7 @@
     <meta property="og:site_name" content="Quarentenados">
     <meta property="og:title" content="Quarentenados">
     <meta property="og:description" content="Fique safe e informado nesta quarentena">
-    <meta property="og:image" content="http://www.quarentenados.com/imgs/investment-company.png">
+    <meta property="og:image" content="http://www.quarentenados.com/imgs/quarentenados-share.jpg">
     <meta property="og:url" content="http://www.quarentendados.com">
     <meta name="theme-color" content="#C0BDE8" />
     <title>Quarentenados</title>
