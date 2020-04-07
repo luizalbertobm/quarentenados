@@ -46,7 +46,7 @@
                                     <div class="card">
                                         <div class="card-header" id="headingOne">
                                             <h2 class="mb-0">
-                                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <button id="btnInsertStore" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                     Cadastro
                                                 </button>
                                             </h2>
@@ -88,7 +88,7 @@
                                     <div class="card">
                                         <div class="card-header" id="headingThree">
                                             <h2 class="mb-0">
-                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <button id="btnListStore" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                     Listagem
                                                 </button>
                                             </h2>
@@ -188,14 +188,16 @@
                         .then(res => {
                             this.cleanStore()
                             this.getStores()
+                            $('#btnListStore').click()
                         })
+                        
                 },
                 editStore(id) {
                     this.id = id
                     this.store = {
                         ...this.stores[id]
                     }
-                    $('#home-tab').click()
+                    $('#btnInsertStore').click()
                 },
                 removeStore(id) {
                     $http.delete(`/stores/${id}.json`)

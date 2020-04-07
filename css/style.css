@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin-top: 80px;
+    margin-top: 60px;
     background-color: #ECF0F3;
     color: #6D7278;
     font-family: 'Montserrat', sans-serif;
@@ -158,4 +158,8 @@ body .size24, .size24 *{
     width: 80px;
     height: 80px;
     border-radius: 15px;
+}
+
+.bg-purple{
+    background-color: rgb(224, 222, 243);
 }

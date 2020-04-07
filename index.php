@@ -144,7 +144,7 @@
                         <div class="neumorphism box mb-3" style="background-image: url(imgs/emprego.png)">
                         </div>
                         <a target="_blank" href="https://emprego.egor.pt/pt/anuncios" class="description size18">
-                            Ofertas de emprego 
+                            Ofertas de emprego
                         </a>
                         <br>
                         <a target="_blank" href="#" class="description size18">
@@ -160,9 +160,11 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/jobs.png)">
-                        </div>
-                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdg8s0-15XCe7vCX7gBRRJZhb9F7YEfeMzcFmj0yeXk1-0Xlw/viewform?usp=sf_link/" class="description size18">
+                        <a target="_blank" data-toggle="modal" data-target="#jobsModal" href="javascript:void()" class="description size18">
+                            <div class="neumorphism box mb-3" style="background-image: url(imgs/jobs.png)">
+                            </div>
+                        </a>
+                        <a target="_blank" data-toggle="modal" data-target="#jobsModal" href="javascript:void()" class="description size18">
                             Está sem emprego por causa da crise do Covid-19? Cadastre-se nesse formulário! Divulgaremos vagas em breve!
                         </a>
                     </div>
@@ -219,13 +221,13 @@
                             </div>
                         </a>
                         <a target="_blank" :href="store.externalLink" class="description size18">{{store.name}}</a>
-                            <br>
-                            <span>{{store.description}}</span> <br>
-                            <small v-if="store.ig_user">indicado por <a target="_blank" :href="`http://instagram.com/${store.ig_user}`">{{store.ig_user}}</a> </small>
+                        <br>
+                        <span>{{store.description}}</span> <br>
+                        <small v-if="store.ig_user">indicado por <a target="_blank" :href="`http://instagram.com/${store.ig_user}`">{{store.ig_user}}</a> </small>
                         </a>
                     </div>
                 </div>
-          
+
             </div>
 
 
@@ -346,6 +348,53 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="modal fade" id="jobsModal" tabindex="-1" role="dialog" aria-labelledby="jobsModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="jobsModalLabel">Cadastro de profissionais</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input class="form-control" v-model="user.name" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input class="form-control" v-model="user.email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input class="form-control" v-model="user.phone" type="number">
+                        </div>
+                        <div class="form-group">
+                            <label>Profissão</label>
+                            <input class="form-control" v-model="user.job" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>Cidade</label>
+                            <select class="form-control" v-model="user.city">
+                                <option value="Alcobaça">Alcobaça</option>
+                                <option value="Caldas da Rainha">Caldas da Rainha</option>
+                                <option value="Óbidos">Óbidos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>linkedin</label>
+                            <input class="form-control" v-model="user.linkedin" type="text">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" @click="saveUser" >Gravar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

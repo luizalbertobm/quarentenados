@@ -7,6 +7,7 @@ var app = new Vue({
     el: '#app',
     data: {
         covid: {},
+        user:{},
         news: [],
         stores: [],
         new: {
@@ -43,6 +44,14 @@ var app = new Vue({
                     console.log(res.data)
                     this.stores = res.data
                 })
+        },
+        saveUser(){
+            $http.post('users.json', this.user)
+            .then(res => {
+                $('#jobsModal').modal('hide')
+                this.user = {}
+                window.alert("Dados gravados com sucesso. Obrigado!")
+            })
         }
     },
     mounted() {
