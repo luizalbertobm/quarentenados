@@ -146,7 +146,7 @@
                             Ofertas de emprego 
                         </a>
                         <br>
-                        <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size18">
+                        <a target="_blank" href="#" class="description size18">
                             <small>Recomendado por: Heleni Barreto</small>
                         </a>
                     </div>
