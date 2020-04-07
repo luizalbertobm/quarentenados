@@ -33,6 +33,7 @@
     <link href="imgs/fav-icon2.png" rel="icon" type="image/x-icon" />
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
@@ -212,100 +213,19 @@
                 <h2 id="compras">Onde comprar online</h2>
 
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/casaantero.png)">
-                        </div>
-                        <a target="_blank" href="https://www.instagram.com/casaantero/" class="description size18">
-                            Casa Antero
+                    <div class="col-md-4" v-for="(store, index) in stores" :key="index">
+                        <a target="_blank" :href="store.externalLink">
+                            <div class="neumorphism box mb-3" :style="`background-image: url(http://quarentenados.com/imgs/${store.image})`">
+                            </div>
+                        </a>
+                        <a target="_blank" :href="store.externalLink" class="description size18">{{store.name}}</a>
                             <br>
-                            <small>Encomendas até às 10h.</small>
+                            <span>{{store.description}}</span> <br>
+                            <small>indicado por <a target="_blank" :href="`http://instagram.com/${store.ig_user}`">{{store.ig_user}}</a> </small>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/saudaveissemculpa.png)">
-                        </div>
-                        <a target="_blank" href="https://www.instagram.com/saudaveissemculpa/" class="description size18">
-                            Sem Culpa
-                            <br>
-                            <small>Bolos Saudáveis, muffins, muffins xl e fatia.</small>
-                            <br><small>Recomendado por Juliana Libanio</small>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/leef.jpg)">
-                        </div>
-                        <a target="_blank" href="https://www.instagram.com/leefyourlife/" class="description size18">
-                            Leef
-                            <br>
-                            <small>Entregas Terça e sextas</small>
-                        </a>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/eusebio.png)">
-                        </div>
-                        <a target="_blank" href="https://www.instagram.com/eusebioshamburgueria/" class="description size18">
-                            Eusebio Hamburgueria
-                            <br>
-                            <small>Pedidos de 16 as 24h</small>
-                            <br><small>Recomendado por: Roberto Evangelista</small>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/mercachefe.jpg)">
-                        </div>
-                        <a target="_blank" href="https://mercachefe.pt/pt/" class="description size18">
-                            MercaChefe
-                            <br>
-                            <small>Hipermercado</small>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/barbearia.png)">
-                        </div>
-                        <a target="_blank" href="https://instagram.com/studiombarber?igshid=1ujuijloqenqd" class="description size18">
-                            Studio M Barber
-                            <br>
-                            <small>Barbearia Delivery</small> <br>
-                            <small>Recomendado por: Luiz Alberto</small>
-                        </a>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/art-bake.png)">
-                        </div>
-                        <a target="_blank" href="#" class="description size18">
-                            Art Bake - Bolos caseiros
-                            <br>
-                            <small>Pegar no local - 917 378 117</small>
-                            <br><small>Recomendado por: Julia Nascimento</small>
-                        </a>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/sabores-da-rainha.png)">
-                        </div>
-                        <a target="_blank" href="https://www.facebook.com/SRRestaurantes/" class="description size18">
-                            Restaurante Sabores da Rainha
-                            <br>
-                            <small>Entregas e take away - 262 836 111</small>
-                            <br><small>Recomendado por: Renata Guedes</small>
-                        </a>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/doce-pascal.png)">
-                        </div>
-                        <a target="_blank" href="https://www.facebook.com/docepascoal/" class="description size18">
-                            Ovos de colher da Doce Pascal para entrega! 
-                        </a>
-                        <br>
-                        <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size18">
-                            <small>Recomendado por: Anah Cremonese</small>
-                        </a>
-                    </div>
-
                 </div>
+          
             </div>
 
 
@@ -426,33 +346,6 @@
                     </div>
                 </div>
 
-                <div class="health">
-
-                </div>
-
-                <div class="food">
-
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="myModalLabel">{{news.title}}</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <iframe id="iframe" style="border:none; width:100%; height:350px" :src="news.externalLink"></iframe>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -462,6 +355,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script> -->
+    <script src="js/firebase.js"></script>
+
 
 </body>
 
