@@ -140,14 +140,14 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/doce-pascal.png)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/emprego.png)">
                         </div>
-                        <a target="_blank" href="https://www.facebook.com/docepascoal/" class="description size18">
-                            Ovos de colher da Doce Pascal para entrega! 
+                        <a target="_blank" href="https://emprego.egor.pt/pt/anuncios" class="description size18">
+                            Ofertas de emprego 
                         </a>
                         <br>
                         <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size18">
-                            <small>Recomendado por: Anah Cremonese</small>
+                            <small>Recomendado por: Heleni Barreto</small>
                         </a>
                     </div>
                     <div class="col-md-4">
@@ -290,6 +290,18 @@
                             <br>
                             <small>Entregas e take away - 262 836 111</small>
                             <br><small>Recomendado por: Renata Guedes</small>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/doce-pascal.png)">
+                        </div>
+                        <a target="_blank" href="https://www.facebook.com/docepascoal/" class="description size18">
+                            Ovos de colher da Doce Pascal para entrega! 
+                        </a>
+                        <br>
+                        <a target="_blank" href="https://www.instagram.com/anahcremonese/" class="description size18">
+                            <small>Recomendado por: Anah Cremonese</small>
                         </a>
                     </div>
 
