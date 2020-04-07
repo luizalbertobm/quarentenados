@@ -74,8 +74,7 @@
                                         <thead>
                                             <tr>
                                                 <th style="width: 100px">Img</th>
-                                                <th>Nome</th>
-                                                <th>Indicante</th>
+                                                <th>Nome</th>                                                
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -83,7 +82,7 @@
                                             <tr v-for="(store, index) in stores" :key="index">
                                                 <td><img :src="`http://quarentenados.com/imgs/${store.image}`" alt="" class="img-thumbnail"></td>
                                                 <td> <strong>{{store.name}}</strong> <br> {{store.description}}</td>
-                                                <td> <small>{{store.ig_user}}</small></td>
+                                                
                                                 <td>
                                                     <div class="btn-group" role="group">
                                                         <button id="btnGroupDrop1" type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
