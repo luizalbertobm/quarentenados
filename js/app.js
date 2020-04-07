@@ -1,6 +1,6 @@
 const $http = axios.create({
     baseURL: 'https://quarentenados-f4227.firebaseio.com/',
-    timeout: 1000,
+    timeout: 10000,
 });
 const insta_url = 'https://www.instagram.com/luizalbertobm/?__a=1'
 var app = new Vue({
