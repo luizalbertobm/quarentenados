@@ -141,13 +141,13 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/live-nossa-colab.jpg)">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/emprego.png)">
                         </div>
-                        <a target="_blank" href="https://www.sympla.com.br/como-ser-camaleao-na-crise-do-coronavirus__830077" class="description size18">
-                            Papo colaborativo online. Clique aqui pra se inscrever.
+                        <a target="_blank" href="https://emprego.egor.pt/pt/anuncios" class="description size18">
+                            Ofertas de emprego 
                         </a>
                         <br>
-                        <a target="_blank" href="https://www.instagram.com/heleni.barreto/" class="description size18">
+                        <a target="_blank" href="#" class="description size18">
                             <small>Recomendado por: Heleni Barreto</small>
                         </a>
                     </div>
@@ -224,8 +224,8 @@
                             <small>indicado por <a target="_blank" :href="`http://instagram.com/${store.ig_user}`">{{store.ig_user}}</a> </small>
                         </a>
                     </div>
-
                 </div>
+          
             </div>
 
 
