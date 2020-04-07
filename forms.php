@@ -25,79 +25,116 @@
     <div id="app" class="container">
         <img src="imgs/logo-qmdpi.png" height="30" alt="">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
 
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Lojas</h5>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#insert-stores" role="tab" aria-controls="insert-stores" aria-selected="true">cadastro</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#insert-stores" role="tab" aria-controls="insert-stores" aria-selected="true">Lojas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="list-stores-tab" data-toggle="tab" href="#list-stores" role="tab" aria-controls="list-stores" aria-selected="false">Lista</a>
+                                <a class="nav-link" id="list-stores-tab" data-toggle="tab" href="#list-stores" role="tab" aria-controls="list-stores" aria-selected="false">Notícias</a>
                             </li>
                         </ul>
 
                         <div class="tab-content" id="myTabContent">
+
                             <div class="tab-pane fade show active" id="insert-stores" role="tabpanel" aria-labelledby="insert-stores">
-                                <div class="form-group">
-                                    <label for="">Nome</label>
-                                    <input type="text" class="form-control" v-model="store.name">
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Cadastro
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="form-group">
+                                                    <label for="">Nome</label>
+                                                    <input type="text" class="form-control" v-model="store.name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Descrição</label>
+                                                    <input type="text" class="form-control" v-model="store.description">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Link</label>
+                                                    <input type="text" class="form-control" v-model="store.externalLink">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Instagram do Indicante</label>
+                                                    <input type="text" class="form-control" v-model="store.ig_user">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Imagem</label>
+                                                    <input type="text" class="form-control" v-model="store.image">
+                                                </div>
+                                                <img :src="`http://quarentenados.com/imgs/${store.image}`" alt="" class="img-thumbnail">
+                                                <!-- <div class="form-group">
+                                                    <label for="">Telefone</label>
+                                                    <input type="text" class="form-control" v-model="store.phone">
+                                                </div> -->
+                                                <hr>
+                                                <button class="btn btn-primary" @click="addStore">Gravar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Listagem
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table teble-condensed">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="width: 100px">Img</th>
+                                                                <th>Nome</th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr v-for="(store, index) in stores" :key="index">
+                                                                <td><img :src="`http://quarentenados.com/imgs/${store.image}`" alt="" class="img-thumbnail"></td>
+                                                                <td> <strong>{{store.name}}</strong> <br> {{store.description}}</td>
+
+                                                                <td>
+                                                                    <div class="btn-group" role="group">
+                                                                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                            Opções
+                                                                        </button>
+                                                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                                            <a class="dropdown-item text-danger" href="#" @click="removeStore(index)"> <i class="fa fa-trash"></i> Excluir</a>
+                                                                            <a class="dropdown-item" href="#" @click="editStore(index)"><i class="fa fa-pencil"></i> Editar</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="">Descrição</label>
-                                    <input type="text" class="form-control" v-model="store.description">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Link</label>
-                                    <input type="text" class="form-control" v-model="store.externalLink">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Instagram do Indicante</label>
-                                    <input type="text" class="form-control" v-model="store.ig_user">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Imagem</label>
-                                    <input type="text" class="form-control" v-model="store.image">
-                                </div>
-                                <img :src="`http://quarentenados.com/imgs/${store.image}`" alt="" class="img-thumbnail">
-                                <!-- <div class="form-group">
-                                    <label for="">Telefone</label>
-                                    <input type="text" class="form-control" v-model="store.phone">
-                                </div> -->
-                                <button class="btn btn-primary" @click="addStore">Gravar</button>
+
+
+
+
                             </div>
                             <div class="tab-pane fade" id="list-stores" role="tabpanel" aria-labelledby="list-stores">
-                                <div class="table-responsive">
-                                    <table class="table teble-condensed">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 100px">Img</th>
-                                                <th>Nome</th>                                                
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr v-for="(store, index) in stores" :key="index">
-                                                <td><img :src="`http://quarentenados.com/imgs/${store.image}`" alt="" class="img-thumbnail"></td>
-                                                <td> <strong>{{store.name}}</strong> <br> {{store.description}}</td>
-                                                
-                                                <td>
-                                                    <div class="btn-group" role="group">
-                                                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Opções
-                                                        </button>
-                                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                            <a class="dropdown-item text-danger" href="#" @click="removeStore(index)"> <i class="fa fa-trash"></i> Excluir</a>
-                                                            <a class="dropdown-item" href="#" @click="editStore(index)"><i class="fa fa-pencil"></i> Editar</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+
                             </div>
                         </div>
 

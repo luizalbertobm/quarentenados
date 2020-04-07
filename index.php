@@ -221,7 +221,7 @@
                         <a target="_blank" :href="store.externalLink" class="description size18">{{store.name}}</a>
                             <br>
                             <span>{{store.description}}</span> <br>
-                            <small>indicado por <a target="_blank" :href="`http://instagram.com/${store.ig_user}`">{{store.ig_user}}</a> </small>
+                            <small v-if="store.ig_user">indicado por <a target="_blank" :href="`http://instagram.com/${store.ig_user}`">{{store.ig_user}}</a> </small>
                         </a>
                     </div>
                 </div>
