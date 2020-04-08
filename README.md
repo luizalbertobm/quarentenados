@@ -1,4 +1,5 @@
 # quarentenados.com
+Projeto sem fins lucrativos desenvolvido para ajudar as pessoas com informações e utilidades para o momento complicado de pandemia.
 
 ## Tecnologias envolvidas:
 - HTML
