@@ -1,5 +1,5 @@
 # quarentenados.com
-This is a non-profit project, develop to give people assistance during the COVID-19 pandemic.
+This is a non-profit project, developed to give people assistance during the COVID-19 pandemic.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
@@ -7,11 +7,11 @@ These instructions will get you a copy of the project up and running on your loc
 ## Prerequisites
 This project uses composer to manage dependencies.
 
-To install composer on **linux** (debian distribuctions) run `apt-get install composer`, after this go to the project folder and run `composer install`.
+To install composer on **linux** (debian distributions) run `apt-get install composer`, after this go to the project folder and run `composer install`.
 
 For **windows** follow the instruction in [this link](https://getcomposer.org/download/)
 
-That's it! Now you can open the project only writing the local path in your broser.
+That's it! Now you can open the project only putting the local path in your broser.
 
 ## Technological environment:
 - HTML
