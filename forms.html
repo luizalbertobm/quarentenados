@@ -80,7 +80,7 @@
                                                     <input type="text" class="form-control" v-model="store.phone">
                                                 </div> -->
                                                 <hr>
-                                                <button class="btn btn-primary" @click="addStore">Gravar</button>
+                                                <button class="btn btn-outline-primary" @click="addStore">Gravar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -184,7 +184,7 @@
                 addStore() {
                     const method = this.id ? 'patch' : 'post'
                     const finalURL = this.id ? `/${this.id}.json` : '.json'
-                    $http[method](`stores${finalURL}`, this.store)
+                    $http[method](`stores-fortaleza${finalURL}`, this.store)
                         .then(res => {
                             this.cleanStore()
                             this.getStores()
@@ -200,13 +200,13 @@
                     $('#btnInsertStore').click()
                 },
                 removeStore(id) {
-                    $http.delete(`/stores/${id}.json`)
+                    $http.delete(`/stores-fortaleza/${id}.json`)
                         .then(res => {
                             this.getStores()
                         })
                 },
                 getStores() {
-                    $http.get('stores.json')
+                    $http.get('stores-fortaleza.json')
                         .then(res => {
                             console.log(res.data)
                             this.stores = res.data

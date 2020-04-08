@@ -33,13 +33,13 @@ var app = new Vue({
                 })
         },
         createStore() {
-            $http.post('stores.json', this.store)
+            $http.post('stores-fortaleza.json', this.store)
                 .then(res => {
                     console.log(res)
                 })
         },
         getStores() {
-            $http.get('stores.json')
+            $http.get('stores-fortaleza.json')
                 .then(res => {
                     console.log(res.data)
                     this.stores = res.data
@@ -65,7 +65,7 @@ var app = new Vue({
         }
     },
     created() {
-        axios.get('https://coronavirus-19-api.herokuapp.com/countries/portugal')
+        axios.get('https://coronavirus-19-api.herokuapp.com/countries/brazil')
             .then(res => {
                 console.log(res)
                 this.covid = res.data
