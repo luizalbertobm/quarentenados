@@ -23,5 +23,5 @@ That's it! Now you can open the project only writing the local path in your bros
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Authors
-- **Luiz Alberto** - *code* - [luizalbertobm](https://github.com/luizalbertobm/)
-- **Júlia Nascimento** - *design and content search* - [junascimentto](https://github.com/junascimentto)
+- **Luiz Alberto** - *programmer* - [luizalbertobm](https://github.com/luizalbertobm/)
+- **Júlia Nascimento** - *designer and content search* - [junascimentto](https://github.com/junascimentto)
