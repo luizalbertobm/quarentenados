@@ -6,7 +6,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Prerequisites
 This project uses composer to manage dependencies.
-To install composer in linux (debian distribuctions) use `apt-get install composer`, after this go to the project folder and do `composer install` command.
+
+To install composer on **linux** (debian distribuctions) run `apt-get install composer`, after this go to the project folder and run `composer install`.
+
+For **windows** follow the instruction in [this link](https://getcomposer.org/download/)
 
 That's it! Now you can open the project only writing the local path in your broser.
 
