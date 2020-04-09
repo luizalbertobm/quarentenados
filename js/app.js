@@ -6,10 +6,12 @@ const insta_url = 'https://www.instagram.com/luizalbertobm/?__a=1'
 var app = new Vue({
     el: '#app',
     data: {
+        // TODO: tem que alterar esse link antes de publicar: 
+        base_url:'file:///home/rafael/Projetos/quarentenados',
         covid: {},
         user:{},
         news: [],
-        stores: []
+        stores: [],
     },
     methods: {
         getStores() {
