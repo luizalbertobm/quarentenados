@@ -174,6 +174,17 @@
             <div class="section">
                 <h2 id="noticias">Notícias</h2>
                 <div class="row">
+                    <div class="col-md-4 mb-4" v-for="(item, index) in news">
+                        <div class="neumorphism news">
+                            <img :src="`imgs/${item.image}`" alt="img">
+                            <div>
+                                <a target="_blank" href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
+                                    <br><strong>{{item.title}}</strong>
+                                    <br>{{item.description}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-4 mb-4">
                         <div class="neumorphism news">
                             <img src="imgs/remote-job.png" alt="img">
@@ -392,7 +403,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" @click="saveUser" >Gravar</button>
+                        <button type="button" class="btn btn-primary" @click="saveUser">Gravar</button>
                     </div>
                 </div>
             </div>
