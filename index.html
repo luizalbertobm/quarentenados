@@ -215,11 +215,10 @@
 
                 <div class="row">
 
-                    <div class="col-md-4">
-                        <div class="neumorphism box mb-3" style="background-image: url(imgs/covidografia.png)">
-                        </div>
-                        <a target="_blank" href="https://exame.abril.com.br/tecnologia/10-aplicativos-para-lidar-com-a-pandemia-de-coronavirus/" class="description size18">
-                            10 aplicativos para lidar com a pandemia de coronavírus
+                    <div class="col-md-4" v-for="(tecn, index) in tecns" :key="index">
+                        <a target="_blank" :href="tecn.externalLink" class="description size18" :href="{{tecn.description}}">
+                            <div class="neumorphism box mb-3" style="`background-image: url(${base_url}/imgs/${tecn.image})`">
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -233,7 +232,7 @@
                             <div class="neumorphism box mb-3" style="background-image: url(imgs/investment-company.png)">
                             </div>
                             <a target="_blank" href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b" class="description size18">
-                                A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em 4 passos.
+                                A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em quatro passos.
                             </a>
                         </div>
                         <div class="col-md-4">

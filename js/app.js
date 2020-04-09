@@ -7,9 +7,9 @@ var app = new Vue({
     el: '#app',
     data: {
         // TODO: tem que alterar esse link antes de publicar: 
-        base_url:'file:///home/rafael/Projetos/quarentenados',
+        base_url: 'file:///home/rafael/Projetos/quarentenados',
         covid: {},
-        user:{},
+        user: {},
         news: [],
         stores: [],
     },
@@ -28,18 +28,26 @@ var app = new Vue({
                     this.news = res.data
                 })
         },
-        saveUser(){
+        getTecns() {
+            $http.get('tecns-fortaleza.json')
+                .then(res => {
+                    console.log(res.data)
+                    this.tecns = res.data
+                })
+        },
+        saveUser() {
             $http.post('users.json', this.user)
-            .then(res => {
-                $('#jobsModal').modal('hide')
-                this.user = {}
-                window.alert("Dados gravados com sucesso. Obrigado!")
-            })
+                .then(res => {
+                    $('#jobsModal').modal('hide')
+                    this.user = {}
+                    window.alert("Dados gravados com sucesso. Obrigado!")
+                })
         }
     },
     mounted() {
         this.getStores()
         this.getNews()
+        this.getTecns()
     },
     filters: {
         numberFormat: function (value) {

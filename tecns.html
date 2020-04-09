@@ -31,17 +31,17 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <h2>Notícias</h2>
+                        <h2>Tecnologia</h2>
                         <div class="tab-content" id="myTabContent">
 
-                            <div class="tab-pane fade show active" id="insert-news" role="tabpanel"
-                                aria-labelledby="insert-news">
+                            <div class="tab-pane fade show active" id="insert-tecns" role="tabpanel"
+                                aria-labelledby="insert-tecns">
 
                                 <div class="accordion" id="accordionExample">
                                     <div class="card">
                                         <div class="card-header" id="headingOne">
                                             <h2 class="mb-0">
-                                                <button id="btnInsertNew" class="btn btn-link" type="button"
+                                                <button id="btnInsertTecn" class="btn btn-link" type="button"
                                                     data-toggle="collapse" data-target="#collapseOne"
                                                     aria-expanded="true" aria-controls="collapseOne">
                                                     Cadastro
@@ -53,26 +53,20 @@
                                             data-parent="#accordionExample">
                                             <div class="card-body">
                                                 <div class="form-group">
-                                                    <label for="">Título</label>
-                                                    <input type="text" class="form-control" v-model="item.title">
-                                                </div>
-                                                <div class="form-group">
                                                     <label for="">Descrição</label>
                                                     <input type="text" class="form-control"
-                                                        v-model="item.description">
+                                                        v-model="tecn.description">
                                                 </div>
                                                 <div class="form-group">                                                 
                                                     <label for="">Link</label>
-                                                    <input type="text" class="form-control" v-model="item.link">
+                                                    <input type="text" class="form-control" v-model="tecn.link">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="">Imagem</label>
-                                                    <input type="text" class="form-control" v-model="item.image">
+                                                    <input type="text" class="form-control" v-model="tecn.image">
                                                 </div>
-                                                <img :src="`http://quarentenados.com/imgs/`" alt=""
-                                                    class="img-thumbnail">
                                                 <hr>
-                                                <button class="btn btn-outline-primary" @click="addNew">Gravar</button>
+                                                <button class="btn btn-outline-primary" @click="addTecn">Gravar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -80,7 +74,7 @@
                                     <div class="card">
                                         <div class="card-header" id="headingThree">
                                             <h2 class="mb-0">
-                                                <button id="btnListNew" class="btn btn-link collapsed" type="button"
+                                                <button id="btnListTecn" class="btn btn-link collapsed" type="button"
                                                     data-toggle="collapse" data-target="#collapseThree"
                                                     aria-expanded="false" aria-controls="collapseThree">
                                                     Listagem
@@ -100,11 +94,11 @@
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr v-for="(item, index) in news" :key="index">
-                                                                <td><img :src="`http://quarentenados.com/imgs/${item.image}`"
+                                                            <tr v-for="(tecn, index) in tecns" :key="index">
+                                                                <td><img :src="`http://quarentenados.com/imgs/${tecn.image}`"
                                                                         alt="" class="img-thumbnail"></td>
-                                                                <td> <strong>{{item.title}}</strong> <br>
-                                                                    {{item.description}}</td>
+                                                                <td> <strong>{{tecn.title}}</strong> <br>
+                                                                    {{tecn.description}}</td>
 
                                                                 <td>
                                                                     <div class="btn-group" role="group">
@@ -116,11 +110,11 @@
                                                                         </button>
                                                                         <div class="dropdown-menu"
                                                                             aria-labelledby="btnGroupDrop1">
-                                                                            <a class="dropdown-item text-danger"
-                                                                                href="#" @click="removeNew(index)"> <i
+                                                                            <a class="dropdown-tecn text-danger"
+                                                                                href="#" @click="removeTecn(index)"> <i
                                                                                     class="fa fa-trash"></i> Excluir</a>
-                                                                            <a class="dropdown-item" href="#"
-                                                                                @click="editNew(index)"><i
+                                                                            <a class="dropdown-tecn" href="#"
+                                                                                @click="editTecn(index)"><i
                                                                                     class="fa fa-pencil"></i> Editar</a>
                                                                         </div>
                                                                     </div>
@@ -138,7 +132,7 @@
 
 
                             </div>
-                            <div class="tab-pane fade" id="list-news" role="tabpanel" aria-labelledby="list-news">
+                            <div class="tab-pane fade" id="list-tecns" role="tabpanel" aria-labelledby="list-tecns">
 
                             </div>
 
@@ -182,9 +176,8 @@
             data: function () {
                 return {
                     id: null,
-                    news: [],
-                    item: {
-                        title: '',
+                    tecns: [],
+                    tecn: {
                         description: '',
                         image: '',
                         link: ''
@@ -192,44 +185,44 @@
                 }
             },
             methods: {
-                addNew() {
+                addTecn() {
                     const method = this.id ? 'patch' : 'post'
                     const finalURL = this.id ? `/${this.id}.json` : '.json'
-                    $http[method](`news-fortaleza${finalURL}`, this.item)
+                    $http[method](`tecns-fortaleza${finalURL}`, this.tecn)
                         .then(res => {
-                            this.cleanNew()
-                            this.getNews()
-                            $('#btnListNew').click()
+                            this.cleanTecn()
+                            this.getTecns()
+                            $('#btnListTecn').click()
                         })
 
                 },
-                editNew(id) {
+                editTecn(id) {
                     this.id = id
-                    this.new = {
-                        ...this.news[id]
+                    this.tecn = {
+                        ...this.tecns[id]
                     }
-                    $('#btnInsertNew').click()
+                    $('#btnInsertTecn').click()
                 },
-                removeNew(id) {
-                    $http.delete(`/news-fortaleza/${id}.json`)
+                removeTecn(id) {
+                    $http.delete(`/tecns-fortaleza/${id}.json`)
                         .then(res => {
-                            this.getNews()
+                            this.getTecns()
                         })
                 },
-                getNews() {
-                    $http.get('news-fortaleza.json')
+                getTecns() {
+                    $http.get('tecns-fortaleza.json')
                         .then(res => {
                             console.log(res.data)
-                            this.news = res.data
+                            this.tecns = res.data
                         })
                 },
-                cleanNew() {
-                    this.new = {}
+                cleanTecn() {
+                    this.tecn = {}
                     this.id = null
                 }
             },
             created() {
-                this.getNews()
+                this.getTecns()
             },
         })
     </script>
