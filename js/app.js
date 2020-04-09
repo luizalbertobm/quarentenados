@@ -9,40 +9,21 @@ var app = new Vue({
         covid: {},
         user:{},
         news: [],
-        stores: [],
-        new: {
-            title: 'Negócios',
-            description: 'Covid-19, o que podem fazer as empresas diante deste desafio?',
-            externalLink: 'https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9',
-            image: 'http://quarentenados.com/imgs/remote-job.png'
-        },
-        store: {
-            name: 'Casa Antero',
-            description: 'Encomendas até às 10h.',
-            phone: '910657140',
-            externalLink: 'https://www.instagram.com/casaantero/',
-            image: 'http://localhost:8888/quarentenados/imgs/casaantero.png',
-            ig_user: 'luizalbertobm'
-        }
+        stores: []
     },
     methods: {
-        createNews() {
-            $http.post('news.json', this.new)
-                .then(res => {
-                    console.log(res)
-                })
-        },
-        createStore() {
-            $http.post('stores.json', this.store)
-                .then(res => {
-                    console.log(res)
-                })
-        },
         getStores() {
             $http.get('stores.json')
                 .then(res => {
                     console.log(res.data)
                     this.stores = res.data
+                })
+        },
+        getNews() {
+            $http.get('news.json')
+                .then(res => {
+                    console.log(res.data)
+                    this.news = res.data
                 })
         },
         saveUser(){
@@ -56,6 +37,7 @@ var app = new Vue({
     },
     mounted() {
         this.getStores()
+        this.getNews()
     },
     filters: {
         numberFormat: function (value) {
@@ -65,7 +47,7 @@ var app = new Vue({
         }
     },
     created() {
-        axios.get('https://coronavirus-19-api.herokuapp.com/countries/portugal')
+        axios.get('https://coronavirus-19-api.herokuapp.com/countries/brazil')
             .then(res => {
                 console.log(res)
                 this.covid = res.data
