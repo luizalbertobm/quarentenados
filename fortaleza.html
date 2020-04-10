@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162791347-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162791347-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- social metas -->
+    <meta property="og:site_name" content="Quarentenados">
+    <meta property="og:title" content="Quarentenados">
+    <meta property="og:description" content="Fique safe e informado nesta quarentena">
+    <meta property="og:image" content="http://www.quarentenados.com/imgs/quarentenados-share.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="http://www.quarentendados.com">
+    <meta name="theme-color" content="#C0BDE8" />
+    <title>Quarentenados</title>
+
+    <link href="imgs/fav-icon2.png" rel="icon" type="image/x-icon" />
+    <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Montserrat:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/logo-qmdpi.png" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#compras">Compras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnologia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#map">Mapa de disseminação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-4">
+
+            <p class=""><strong>Situação atual no Brasil:</strong></p>
+            <div class="info">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-4">
+                        <div class="neumorphism p-3 h-100 w-100 d-inline-block text-success">
+                            <div class="size24"><strong>{{covid.recovered || 0 | numberFormat}}</strong></div>
+                            <strong>Curados</strong>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 mb-4">
+                        <div class="neumorphism p-3 h-100 w-100 d-inline-block">
+                            <div class="size24">{{covid.cases || 0 | numberFormat}}</div>
+                            Confirmados
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 mb-4">
+                        <div class="neumorphism p-3 h-100 w-100 d-inline-block">
+                            <div class="size24">{{covid.active || 0 | numberFormat}}</div>
+                            Ativos
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 mb-4">
+                        <div class="neumorphism p-3 h-100 w-100 d-inline-block">
+                            <div class="size24">{{covid.critical || 0 | numberFormat}}</div>
+                            Críticos
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism news">
+                            <img src="imgs/24-h.png" alt="img">
+                            <div>
+                                <strong>Ajuda</strong> <br> Sente tosse, febre ou falta de ar? Ligue <strong>0800 275
+                                    1475</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <h2 id="destaques">Destaques</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="neumorphism news">
+                            <img src="imgs/entrega.png" alt="img">
+                            <div>
+                                <a target="_blank" href="https://forms.gle/VZNVUiBRZfiBdvf19">
+                                    <strong>Entregas</strong>
+                                    <br>Faz entregas a domicílio ou sabe quem faça? Faça sua recomendação!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="neumorphism news">
+                            <img src="imgs/centro-espirita.jpeg" alt="img">
+                            <div>
+                                <a target="_blank"
+                                    href="https://www.facebook.com/Centro-Esp%C3%ADrita-Sol-do-Amor-ao-Pr%C3%B3ximo-287617558035325/">
+                                    <strong>Ajuda</strong>
+                                    <br>Centro Espírita Sol do Amor ao Próximo
+                                    <br><small>Aila Veras - (85) 98693-5954</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="neumorphism news">
+                            <img src="imgs/supera-fortaleza.jpeg" alt="img">
+                            <div>
+                                <a target="_blank"
+                                    href="https://www.kickante.com.br/campanhas/movimento-supera-fortaleza">
+                                    <strong>Supera Fortaleza</strong>
+                                    <br>Ajudando a população mais vulnerável, ambulantes e autônomos.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/jobs.png)">
+                        </div>
+                        <a target="_blank"
+                            href="https://www.hapvida.com.br/site/noticias/hapvida-abre-mais-de-500-vagas-tempor%C3%A1rias-de-emprego-em-%C3%A1rea-assistencial"
+                            class="description size18">
+                            Hapvida abre mais de 500 vagas temporárias
+                        </a>
+                        <br>
+                        <a target="_blank" href="#" class="description size18">
+                            <small></small>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="neumorphism box mb-3" style="background-image: url(imgs/donation.jpg)">
+                        </div>
+                        <a target="_blank" href="https://www.instagram.com/proximopassoaes/" class="description size18">
+                            Coleta de alimentos para famílias em necessidade. Falar com Walter Costa.
+                            <br /><small>(85) 8668-7352</small></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a target="_blank" data-toggle="modal" data-target="#jobsModal" href="javascript:void()"
+                            class="description size18">
+                            <div class="neumorphism box mb-3" style="background-image: url(imgs/jobs.png)">
+                            </div>
+                        </a>
+                        <a target="_blank" data-toggle="modal" data-target="#jobsModal" href="javascript:void()"
+                            class="description size18">
+                            Está sem emprego por causa da crise do Covid-19? Cadastre-se nesse formulário! Divulgaremos
+                            vagas em breve!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 id="noticias">Notícias</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4" v-for="(item, index) in news">
+                        <div class="neumorphism news">
+                            <img :src="`imgs/${item.image}`" alt="img">
+                            <div>
+                                <a target="_blank"
+                                    href="https://medium.com/aliados-the-challenges-consulting/covid-19-o-que-podem-fazer-as-empresas-perante-este-desafio-8c9710015da9">
+                                    <br><strong>{{item.title}}</strong>
+                                    <br>{{item.description}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section">
+                <h2 id="compras">Onde comprar online</h2>
+
+                <div class="row">
+                    <div class="col-md-4" v-for="(store, index) in stores" :key="index">
+                        <a target="_blank" :href="store.externalLink">
+                            <div class="neumorphism box mb-3"
+                                :style="`background-image: url(${base_url}/imgs/${store.image})`">
+                            </div>
+                        </a>
+                        <a target="_blank" :href="store.externalLink" class="description size18">{{store.name}}</a>
+                        <br>
+                        <span>{{store.description}}</span> <br>
+                        <small v-if="store.ig_user">indicado por <a target="_blank"
+                                :href="`http://instagram.com/${store.ig_user}`">{{store.ig_user}}</a> </small>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="section">
+                <h2 id="tecnologia">Tecnologia</h2>
+
+                <div class="row">
+
+                    <div class="col-md-4" v-for="(tecn, index) in tecns" :key="index">
+                        <a target="_blank" :href="tecn.externalLink" class="description size18"
+                            :href="{{tecn.description}}">
+                            <div class="neumorphism box mb-3"
+                                style="`background-image: url(${base_url}/imgs/${tecn.image})`">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="section">
+                    <h2 id="Para o seu negócio">Para o seu negócio</h2>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="neumorphism box mb-3"
+                                style="background-image: url(imgs/investment-company.png)">
+                            </div>
+                            <a target="_blank"
+                                href="https://medium.com/@igor_73854/a-crise-do-coronavirus-vai-quebrar-minha-empresa-e-agora-como-se-transformar-em-4-passos-20c30ebb7d3b"
+                                class="description size18">
+                                A crise do coronavirus vai quebrar minha empresa, e agora? Como se transformar em quatro
+                                passos.
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="neumorphism box mb-3"
+                                style="background-image: url(imgs/corona-o-que-voce-precisa-saber.png)">
+                            </div>
+                            <a target="_blank"
+                                href="https://www.publico.pt/2020/03/27/sociedade/noticia/precisa-saber-hoje-coronavirus-1909913"
+                                class="description size18">
+                                O que você precisa saber hoje sobre o coronavírus
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="neumorphism box mb-3" style="background-image: url(imgs/corona-news.png)">
+                            </div>
+                            <a target="_blank" href="https://covid.saude.gov.br/" class="description size18">
+                                Ponto de Situação atual no Brasil
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="business" id="map">
+                    <h2 class="mt-5">Mapa da disseminação</h2>
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="">
+                                <iframe class="" src="https://www.bing.com/covid/local/brazil" frameborder="0"
+                                    style="width: 100%; height: 600px" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promotions" id="videos">
+                    <h2 class="mt-5">Videos</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="neumorphism">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" style="border-radius: 15px; "
+                                        src="https://www.youtube.com/embed/4yIR2rxwV-0" frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <p class="description size18">
+                                Mudanças de hábitos dos brasileiros nos primeiros dias de Coronavírus
+                            </p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="neumorphism">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ra7i39lotk4"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe> </div>
+                            </div>
+                            <p class="description size18">
+                                Atila Iamarino comenta teorias relacionadas à origem do novo coronavírus
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="jobsModal" tabindex="-1" role="dialog" aria-labelledby="jobsModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="jobsModalLabel">Cadastro de profissionais</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input class="form-control" v-model="user.name" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input class="form-control" v-model="user.email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input class="form-control" v-model="user.phone" type="number">
+                        </div>
+                        <div class="form-group">
+                            <label>Profissão</label>
+                            <input class="form-control" v-model="user.job" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>Cidade</label>
+                            <select class="form-control" v-model="user.city">
+                                <option value="Alcobaça">Alcobaça</option>
+                                <option value="Caldas da Rainha">Caldas da Rainha</option>
+                                <option value="Óbidos">Óbidos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>linkedin</label>
+                            <input class="form-control" v-model="user.linkedin" type="text">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" @click="saveUser">Gravar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        const $http = axios.create({
+            baseURL: 'https://quarentenados-f4227.firebaseio.com/',
+            timeout: 10000,
+        });
+        const insta_url = 'https://www.instagram.com/luizalbertobm/?__a=1'
+        var app = new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    covid: {},
+                    user: {},
+                    news: [],
+                    stores: [],
+                    technologies: []
+                }
+            },
+            methods: {
+                getStores() {
+                    $http.get('stores-fortaleza.json')
+                        .then(res => {
+                            this.stores = res.data
+                        })
+                },
+                getNews() {
+                    $http.get('news-fortaleza.json')
+                        .then(res => {
+                            this.news = res.data
+                        })
+                },
+                getTech() {
+                    $http.get('techno-fortaleza.json')
+                        .then(res => {
+                            this.technologies = res.data
+                        })
+                },
+                saveUser() {
+                    $http.post('users.json', this.user)
+                        .then(res => {
+                            $('#jobsModal').modal('hide')
+                            this.user = {}
+                            window.alert("Dados gravados com sucesso. Obrigado!")
+                        })
+                }
+            },
+            mounted() {
+                this.getStores()
+                this.getNews()
+                this.getTech()
+            },
+            filters: {
+                numberFormat: function (value) {
+                    return new Intl.NumberFormat('de-DE', {
+                        style: 'decimal'
+                    }).format(value)
+                }
+            },
+            created() {
+                axios.get('https://coronavirus-19-api.herokuapp.com/countries/brazil')
+                    .then(res => {
+                        console.log(res)
+                        this.covid = res.data
+                    })
+            },
+        })
+
+
+        $('.navbar-collapse a').click(function () {
+            $(".navbar-collapse").collapse('hide');
+        });
+    </script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script> -->
+    <script src="js/firebase.js"></script>
+
+
+</body>
+
+</html>
