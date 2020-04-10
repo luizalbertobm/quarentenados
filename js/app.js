@@ -5,39 +5,47 @@ const $http = axios.create({
 const insta_url = 'https://www.instagram.com/luizalbertobm/?__a=1'
 var app = new Vue({
     el: '#app',
-    data: {
-        covid: {},
-        user:{},
-        news: [],
-        stores: []
+    data: function () {
+        return {
+            covid: {},
+            user: {},
+            news: [],
+            stores: [],
+            technologies: []
+        }
     },
     methods: {
         getStores() {
             $http.get('stores.json')
                 .then(res => {
-                    console.log(res.data)
                     this.stores = res.data
                 })
         },
         getNews() {
             $http.get('news.json')
                 .then(res => {
-                    console.log(res.data)
                     this.news = res.data
                 })
         },
-        saveUser(){
+        getTech() {
+            $http.get('techno.json')
+                .then(res => {
+                    this.technologies = res.data
+                })
+        },
+        saveUser() {
             $http.post('users.json', this.user)
-            .then(res => {
-                $('#jobsModal').modal('hide')
-                this.user = {}
-                window.alert("Dados gravados com sucesso. Obrigado!")
-            })
+                .then(res => {
+                    $('#jobsModal').modal('hide')
+                    this.user = {}
+                    window.alert("Dados gravados com sucesso. Obrigado!")
+                })
         }
     },
     mounted() {
         this.getStores()
         this.getNews()
+        this.getTech()
     },
     filters: {
         numberFormat: function (value) {

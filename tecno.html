@@ -176,7 +176,7 @@
             data: function () {
                 return {
                     id: null,
-                    items: [],
+                    technologies: [],
                     item: {
                         description: '',
                         image: '',
@@ -188,7 +188,7 @@
                 addTecn() {
                     const method = this.id ? 'patch' : 'post'
                     const finalURL = this.id ? `/${this.id}.json` : '.json'
-                    $http[method](`tecno${finalURL}`, this.item)
+                    $http[method](`techno${finalURL}`, this.item)
                         .then(res => {
                             this.cleanTecn()
                             this.getTecns()
@@ -199,21 +199,21 @@
                 editTecn(id) {
                     this.id = id
                     this.item = {
-                        ...this.items[id]
+                        ...this.technologies[id]
                     }
                     $('#btnInsertTecn').click()
                 },
                 removeTecn(id) {
-                    $http.delete(`/tecno/${id}.json`)
+                    $http.delete(`/techno/${id}.json`)
                         .then(res => {
                             this.getTecns()
                         })
                 },
                 getTecns() {
-                    $http.get('tecno.json')
+                    $http.get('techno.json')
                         .then(res => {
                             console.log(res.data)
-                            this.items = res.data
+                            this.technologies = res.data
                         })
                 },
                 cleanTecn() {
