@@ -55,7 +55,7 @@ var app = new Vue({
         }
     },
     created() {
-        axios.get('https://coronavirus-19-api.herokuapp.com/countries/brazil')
+        axios.get('https://coronavirus-19-api.herokuapp.com/countries/portugal')
             .then(res => {
                 console.log(res)
                 this.covid = res.data
