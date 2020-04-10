@@ -101,7 +101,7 @@ a:hover {
     transition: all 0.5s;
 }
 a:hover .neumorphism {
-    transform: scale(0.95);
+    transform: scale(1.05);
     box-shadow: 10px 10px 10px rgba(195, 203, 216, 0.22), -10px -10px 10px #ffffff8e;
 }
 
