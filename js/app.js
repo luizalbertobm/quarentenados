@@ -7,7 +7,7 @@ var app = new Vue({
     el: '#app',
     data: {
         // TODO: tem que alterar esse link antes de publicar: 
-        base_url: 'file:///home/rafael/Projetos/quarentenados',
+        base_url: 'http://quarentenados.com',
         covid: {},
         user: {},
         news: [],
@@ -15,21 +15,21 @@ var app = new Vue({
     },
     methods: {
         getStores() {
-            $http.get('stores-fortaleza.json')
+            $http.get('stores.json')
                 .then(res => {
                     console.log(res.data)
                     this.stores = res.data
                 })
         },
         getNews() {
-            $http.get('news-fortaleza.json')
+            $http.get('news.json')
                 .then(res => {
                     console.log(res.data)
                     this.news = res.data
                 })
         },
         getTecns() {
-            $http.get('tecns-fortaleza.json')
+            $http.get('tecns.json')
                 .then(res => {
                     console.log(res.data)
                     this.tecns = res.data
