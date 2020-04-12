@@ -34,8 +34,8 @@
                         <h2>Tecnologia</h2>
                         <div class="tab-content" id="myTabContent">
 
-                            <div class="tab-pane fade show active" id="insert-tecns" role="tabpanel"
-                                aria-labelledby="insert-tecns">
+                            <div class="tab-pane fade show active" id="insert-techno" role="tabpanel"
+                                aria-labelledby="insert-techno">
 
                                 <div class="accordion" id="accordionExample">
                                     <div class="card">
@@ -94,7 +94,7 @@
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr v-for="(tecn, index) in tecns" :key="index">
+                                                            <tr v-for="(tecn, index) in techno" :key="index">
                                                                 <td><img :src="`http://quarentenados.com/imgs/${tecn.image}`"
                                                                         alt="" class="img-thumbnail"></td>
                                                                 <td> <strong>{{tecn.title}}</strong> <br>
@@ -132,7 +132,7 @@
 
 
                             </div>
-                            <div class="tab-pane fade" id="list-tecns" role="tabpanel" aria-labelledby="list-tecns">
+                            <div class="tab-pane fade" id="list-techno" role="tabpanel" aria-labelledby="list-techno">
 
                             </div>
 
@@ -176,7 +176,7 @@
             data: function () {
                 return {
                     id: null,
-                    tecns: [],
+                    techno: [],
                     tecn: {
                         description: '',
                         image: '',
@@ -188,7 +188,7 @@
                 addTecn() {
                     const method = this.id ? 'patch' : 'post'
                     const finalURL = this.id ? `/${this.id}.json` : '.json'
-                    $http[method](`tecns-fortaleza${finalURL}`, this.tecn)
+                    $http[method](`techno-fortaleza${finalURL}`, this.tecn)
                         .then(res => {
                             this.cleanTecn()
                             this.getTecns()
@@ -199,21 +199,21 @@
                 editTecn(id) {
                     this.id = id
                     this.tecn = {
-                        ...this.tecns[id]
+                        ...this.techno[id]
                     }
                     $('#btnInsertTecn').click()
                 },
                 removeTecn(id) {
-                    $http.delete(`/tecns-fortaleza/${id}.json`)
+                    $http.delete(`/techno-fortaleza/${id}.json`)
                         .then(res => {
                             this.getTecns()
                         })
                 },
                 getTecns() {
-                    $http.get('tecns-fortaleza.json')
+                    $http.get('techno-fortaleza.json')
                         .then(res => {
                             console.log(res.data)
-                            this.tecns = res.data
+                            this.techno = res.data
                         })
                 },
                 cleanTecn() {
